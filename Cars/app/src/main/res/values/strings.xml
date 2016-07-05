@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Cars</string>
+    <string name="car_1">Car 1</string>
+    <string name="car_2">Car 2</string>
+    <string name="car">Car</string>
+    <string name="cardesc">CarDesc</string>
+    <string name="carname">CarName</string>
 </resources>
