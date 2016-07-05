@@ -22,17 +22,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:focusable="false"
-                android:divider="#ffffff"
-                android:dividerPadding="2dp"
                 android:background="#a2a54242">
 
                 <FrameLayout
                     android:layout_width="175dp"
                     android:layout_height="120dp"
-                    android:background="#ffffff"></FrameLayout>
+                    android:background="#ffffff">
+
+                </FrameLayout>
 
                 <TextView
-                    android:layout_width="200dp"
+                    android:layout_width="235dp"
                     android:layout_height="match_parent"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/carname"
@@ -40,6 +40,21 @@
                     android:layout_column="1"
                     android:textStyle="bold"
                     android:textAlignment="center" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1" />
 
             </TableRow>
 
