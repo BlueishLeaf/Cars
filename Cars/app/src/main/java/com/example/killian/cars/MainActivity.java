@@ -3,7 +3,7 @@ package com.example.killian.cars;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-//This class is used to populate out collection view of cars
+//This class is used to populate our collection view of cars
 public class MainActivity extends AppCompatActivity {
 
     @Override
