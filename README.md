@@ -4,4 +4,7 @@ A catalog of cars.
 Contributors: Killian, Ronan
 
 //TODO's:
-* Everything
+* Car model and Car catalog model
+* Adapter
+* Database
+* Testing
