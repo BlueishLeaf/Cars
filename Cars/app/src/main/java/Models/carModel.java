@@ -1,5 +1,7 @@
 package Models;
 
+import java.util.ArrayList;
+
 /**
  * Created by Killian on 06/07/2016.
  */
@@ -10,15 +12,17 @@ public class carModel {
     private String color;
     private String description;
     private Double price;
-    private String url;
+    private ArrayList<String> urls;
 
-    public carModel(final int id, final String model, final String color, final String description, final Double price, final String url){
+
+
+    public carModel(final int id, final String model, final String color, final String description, final Double price, final ArrayList<String>urls){
         this.id = id;
         this.model = model;
         this.color = color;
         this.description = description;
         this.price = price;
-        this.url = url;
+        this.urls = urls;
     }
     public int getId(){
         return id;
@@ -35,7 +39,7 @@ public class carModel {
     public double price(){
         return price;
     }
-    public String url(){
-        return url;
+    public ArrayList<String> urls(){
+        return urls;
     }
 }
