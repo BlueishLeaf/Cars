@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by Killian on 06/07/2016.
  */
 
-public class carModel {
+public class CarModel {
 
     //Attributes for a car's id, model, color, description, price, and image URL
 
@@ -17,7 +17,7 @@ public class carModel {
     private Double price;
     private ArrayList<String> urls;
 
-    public carModel(final int id, final String model, final String color, final String description, final Double price, final ArrayList<String>urls){
+    public CarModel(final int id, final String model, final String color, final String description, final Double price, final ArrayList<String>urls){
 
         this.id = id;
         this.model = model;
