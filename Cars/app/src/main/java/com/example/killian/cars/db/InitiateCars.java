@@ -14,8 +14,8 @@ public class InitiateCars {
                 + DBConstants.KEY_MODEL + ", "
                 + DBConstants.KEY_COLOR + ","
                 + DBConstants.KEY_PRICE + ", "
-                + DBConstants.KEY_DESCRIPTION + ") "
-                + DBConstants.KEY_IMAGE_URL + ", "
+                + DBConstants.KEY_DESCRIPTION + ", "
+                + DBConstants.KEY_IMAGE_URL + ") "
                 + "values(1,'Mazda 323', 'Blue', '240000', 'description', 'https://upload.wikimedia.org/wikipedia/commons/3/36/2015_Audi_R8_Coup%C3%A9_5.2_FSI_quattro_%2819409896583%29.jpg')");
 
     }

@@ -29,7 +29,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         db.execSQL(createCarsTable);
         InitiateCars.initCars(db);
 
-        String createCarImageTable = "CREATE TABLE "+ DBConstants.DATABASE_TABLE_CAR_IMAGES +"(id INTEGER PRIMARY KEY AUTOINCREMENT, carId INTEGER, imageurl TEXT)";
+        String createCarImageTable = "CREATE TABLE "+ DBConstants.DATABASE_TABLE_CAR_IMAGES +"(id INTEGER PRIMARY KEY AUTOINCREMENT, carId INTEGER, car_image_url TEXT)";
         db.execSQL(createCarImageTable);
         InitiateCars.initCarImages(db);
 
@@ -52,7 +52,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
         List<CarItem> cars = new ArrayList<>();
 
-        Cursor cursor = db.rawQuery("SELECT id, imageurl FROM " + DBConstants.DATABASE_TABLE_CARS + "", null);
+        Cursor cursor = db.rawQuery("SELECT * FROM " + DBConstants.DATABASE_TABLE_CARS + "", null);
 
         CarItem car;
 
