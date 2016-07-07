@@ -1,4 +1,4 @@
-package Models;
+package com.example.killian.cars.Models;
 
 /**
  * Created by Killian on 06/07/2016.

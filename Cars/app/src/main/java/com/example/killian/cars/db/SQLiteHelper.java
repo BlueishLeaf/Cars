@@ -1,15 +1,16 @@
-package db;
+package com.example.killian.cars.db;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.example.killian.cars.Constants.DBConstants;
+import com.example.killian.cars.Models.CarItem;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import Constants.DBConstants;
-import Models.CarItem;
 
 /**
  * Created by Killian on 07/07/2016.

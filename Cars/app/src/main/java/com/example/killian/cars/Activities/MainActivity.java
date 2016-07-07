@@ -1,4 +1,4 @@
-package Activities;
+package com.example.killian.cars.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,10 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mRecyclerView = (RecyclerView) findViewById(R.id.car_recycler_view);
-        mLayoutManager = new LinearLayoutManager(this);
-        mRecyclerView.setLayoutManager(mLayoutManager);
-        //mAdapter = new MyAdapter(myDataset);
-        mRecyclerView.setAdapter(mAdapter);
+//        mRecyclerView = (RecyclerView) findViewById(R.id.car_recycler_view);
+//        mLayoutManager = new LinearLayoutManager(this);
+//        mRecyclerView.setLayoutManager(mLayoutManager);
+//        //mAdapter = new MyAdapter(myDataset);
+//        mRecyclerView.setAdapter(mAdapter);
+
     }
 }

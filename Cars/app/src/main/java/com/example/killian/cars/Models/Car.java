@@ -1,4 +1,4 @@
-package Models;
+package com.example.killian.cars.Models;
 
 import java.util.ArrayList;
 
