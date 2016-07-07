@@ -1,10 +1,10 @@
 # Car Catalog
 A catalog of cars.
 
-Contributors: Killian, Ronan
+### Contributors: Killian, Ronan
 
-//TODO's:
-* Car model and Car catalog model
+## __TODO's:__
+* ~~Car model and Car catalog model~~
 * Adapter
-* Database
+* ~~Database~~
 * Testing
