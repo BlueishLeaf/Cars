@@ -15,7 +15,7 @@ public class DBConstants {
     public static final String DATABASE_TABLE_CARS = "cars";
     public static final String DATABASE_TABLE_CAR_IMAGES = "car_images";
     public static final int DATA_BASE_VERSION = 1;
-    public static final String BUNDLE_CAR_ID = "watchId";
+    public static final String BUNDLE_CAR_ID = "carId";
     public static final int SPLASH_DISPLAY_LENGTH = 1000;
     public static final String CAR_TAB_INFO = "INFO";
     public static final String CAR_TAB_COMMENTS = "COMMENTS";
