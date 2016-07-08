@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         SQLiteHelper db = new SQLiteHelper(this);
         carItemList = db.getAllCars();
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        Log.i(""+carItemList.size(), "...............................");
 
         mAdapter = new MyAdapter(carItemList, this.getApplicationContext());
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
