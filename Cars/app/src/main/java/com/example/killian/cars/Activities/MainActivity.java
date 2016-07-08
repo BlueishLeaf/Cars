@@ -2,10 +2,12 @@ package com.example.killian.cars.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
+import com.example.killian.cars.Adapters.MyAdapter;
 import com.example.killian.cars.Models.CarItem;
 import com.example.killian.cars.R;
 import com.example.killian.cars.db.SQLiteHelper;
@@ -16,9 +18,9 @@ import java.util.List;
 //This class is used to populate our collection view of cars
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
+    private List<CarItem> carItemList = new ArrayList<>();
+    private RecyclerView recyclerView;
+    private MyAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +28,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SQLiteHelper db = new SQLiteHelper(this);
-        List<CarItem> carItems = db.getAllCars();
-//        mRecyclerView = (RecyclerView) findViewById(R.id.car_recycler_view);
-//        mLayoutManager = new LinearLayoutManager(this);
-//        mRecyclerView.setLayoutManager(mLayoutManager);
-//        //mAdapter = new MyAdapter(myDataset);
-//        mRecyclerView.setAdapter(mAdapter);
+        carItemList = db.getAllCars();
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+
+        mAdapter = new MyAdapter(carItemList, this.getApplicationContext());
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(mLayoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(mAdapter);
+
 
 
     }
