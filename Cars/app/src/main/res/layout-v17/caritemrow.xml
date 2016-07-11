@@ -39,7 +39,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginRight="16dp"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 android:background="#7d6c6c" />
 

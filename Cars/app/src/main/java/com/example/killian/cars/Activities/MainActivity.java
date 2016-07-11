@@ -1,13 +1,15 @@
 package com.example.killian.cars.Activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
 
 import com.example.killian.cars.Adapters.MyAdapter;
+import com.example.killian.cars.Constants.DBConstants;
 import com.example.killian.cars.Models.CarItem;
 import com.example.killian.cars.R;
 import com.example.killian.cars.db.SQLiteHelper;
@@ -40,8 +42,5 @@ public class MainActivity extends AppCompatActivity {
 
         mAdapter = new MyAdapter(carItemList, this.getApplicationContext());
         mRecyclerView.setAdapter(mAdapter);
-
-
-
     }
 }

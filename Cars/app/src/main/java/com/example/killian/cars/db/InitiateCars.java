@@ -64,7 +64,7 @@ public class InitiateCars {
                 + DBConstants.KEY_PRICE + ", "
                 + DBConstants.KEY_DESCRIPTION + ", "
                 + DBConstants.KEY_IMAGE_URL + ") "
-                + "values(7,'DLorn DMC-12', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejs4.jpeg')");
+                + "values(7,'DL DMC-12', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejs4.jpeg')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CARS + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_MODEL + ", "
