@@ -1,11 +1,3 @@
-Full-Res base images:
-Audi R8: https://upload.wikimedia.org/wikipedia/commons/3/36/2015_Audi_R8_Coup%C3%A9_5.2_FSI_quattro_%2819409896583%29.jpg
-Audi TT: https://upload.wikimedia.org/wikipedia/commons/2/29/2014_Audi_TTS_%288J_MY14%29_quattro_coupe_%282015-12-07%29_01.jpg
-BMW G11: https://upload.wikimedia.org/wikipedia/commons/2/2a/2016_BMW_7-Series_%28G11%29_sedan%2C_front_view.jpg
-BMW i3: https://upload.wikimedia.org/wikipedia/commons/a/ab/BMW_i3_01.jpg
-Honda City: https://upload.wikimedia.org/wikipedia/commons/d/d8/2014_Honda_City_%28GM6_MY14%29_VTi_sedan_%282015-07-15%29_01.jpg
-DeLorean DMC-12: https://upload.wikimedia.org/wikipedia/commons/2/2c/Delorean_DMC-12_side.jpg
-
 Required Low-Res images for RecycleView:
 Audi R8: http://needsmorejpeg.com/i/ejsr.jpeg
 Audi TT: http://needsmorejpeg.com/i/ejsz.jpeg
@@ -14,5 +6,4 @@ BMW_i3: http://needsmorejpeg.com/i/ejs2.jpeg
 Honda City: http://needsmorejpeg.com/i/ejs3.jpeg
 Honda Civic: http://needsmorejpeg.com/i/ejs8.jpeg
 DeLorean DMC-12: http://needsmorejpeg.com/i/ejs4.jpeg
-Bughatti Veyron: http://needsmorejpeg.com/i/ejs7.jpeg
 Toyota Yaris: http://needsmorejpeg.com/i/ejsy.jpeg
