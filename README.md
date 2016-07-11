@@ -6,7 +6,8 @@ A catalog of cars
 * ~~Car model and Car catalog model~~
 * ~~Adapter~~
 * ~~Database~~
-* Card View UI
-* Car Item Styling
+* ~~Card View UI~~
+* ~~Car Item Styling~~
 * Car service
+* Car page
 * Testing
