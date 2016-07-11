@@ -1,6 +1,7 @@
 package com.example.killian.cars.Models;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Killian on 06/07/2016.
@@ -15,10 +16,10 @@ public class Car {
     private String model;
     private String color;
     private String description;
-    private Double price;
-    private ArrayList<String> urls;
+    private String price;
+    private List<String> urls;
 
-    public Car(final int id, final String model, final String color, final String description, final Double price, final ArrayList<String>urls){
+    public Car(final int id, final String model, final String color, final String description, final String price, final List<String>urls){
 
         this.id = id;
         this.model = model;
@@ -44,11 +45,11 @@ public class Car {
         return description;
     }
 
-    public double price(){
+    public String price(){
         return price;
     }
 
-    public ArrayList<String> urls(){
+    public List<String> urls(){
         return urls;
     }
 }

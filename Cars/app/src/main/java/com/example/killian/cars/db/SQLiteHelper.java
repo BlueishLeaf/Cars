@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.killian.cars.Constants.DBConstants;
+import com.example.killian.cars.Models.Car;
 import com.example.killian.cars.Models.CarItem;
 
 import java.util.ArrayList;
@@ -67,54 +68,54 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     }
 
     /**
-     * Get a list of watch image resource ids for a specific watch
+     * Get a list of car image URLs for a specific car
+     *
+     * @param id car id
+     * @return List<String> image URLs
+     */
+    public List<String> getCarImageResourceIds(int id) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        List<String> cars = new ArrayList<>();
+
+        Cursor cursor = db.rawQuery("SELECT car_image_url from " + DBConstants.DATABASE_TABLE_CAR_IMAGES + " WHERE carId = " + id, null);
+
+        if (cursor != null) {
+            if (cursor.moveToFirst()) {
+                do {
+                    cars.add(cursor.getString(2));
+                } while (cursor.moveToNext());
+            }
+            cursor.close();
+        }
+        return cars;
+    }
+
+    /**
+     * Return a specific watch
      *
      * @param id watch id
-     * @return List<String> image resource ids
+     * @return Car a Watch
      */
-//    public List<String> getWatchImageResourceIds(int id) {
-//
-//        SQLiteDatabase db = this.getReadableDatabase();
-//
-//        List<String> watches = new ArrayList<>();
-//
-//        Cursor cursor = db.rawQuery("SELECT imageId from " + DATABASE_TABLE_WATCH_IMAGES + " WHERE watchId = " + id, null);
-//
-//        if (cursor != null) {
-//            if (cursor.moveToFirst()) {
-//                do {
-//                    watches.add(cursor.getString(0));
-//                } while (cursor.moveToNext());
-//            }
-//            cursor.close();
-//        }
-//        return watches;
-//    }
-//
-//    /**
-//     * Return a specific watch
-//     *
-//     * @param id watch id
-//     * @return WatchModel a Watch
-//     */
-//    public WatchModel getWatch(int id) {
-//
-//        SQLiteDatabase db = this.getReadableDatabase();
-//
-//        Cursor cursor = db.rawQuery("SELECT * from " + DATABASE_TABLE_WATCHES + " WHERE id = " + id, null);
-//
-//        WatchModel watch = null;
-//
-//        if (cursor != null) {
-//            if (cursor.moveToFirst()) {
-//                do {
-//                    watch = new WatchModel(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getString(2), cursor.getString(3));
-//                } while (cursor.moveToNext());
-//            }
-//            cursor.close();
-//        }
-//
-//        return watch;
-//    }
+    public Car getCar(int id) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT * from " + DBConstants.DATABASE_TABLE_CARS + " WHERE id = " + id, null);
+
+        Car car = null;
+
+        if (cursor != null) {
+            if (cursor.moveToFirst()) {
+                do {
+                    car = new Car(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), getCarImageResourceIds(id));
+                } while (cursor.moveToNext());
+            }
+            cursor.close();
+        }
+
+        return car;
+    }
 }
 

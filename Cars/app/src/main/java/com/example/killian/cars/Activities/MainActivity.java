@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SQLiteHelper db = new SQLiteHelper(this);
+        db.getAllCars();
         carItemList = db.getAllCars();
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
