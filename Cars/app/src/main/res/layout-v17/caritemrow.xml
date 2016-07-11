@@ -20,12 +20,13 @@
             android:padding = "10dp">
 
             <TextView
+                android:scrollHorizontally="false"
+                android:text="First line\r\nNext line"
                 android:id="@+id/car_item_title"
                 android:textSize="30dp"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="this is a model"
                 android:layout_alignBottom="@+id/car_item_image"
                 android:layout_alignTop="@+id/car_item_image" />
 
