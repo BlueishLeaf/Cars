@@ -16,7 +16,7 @@ public class InitiateCars {
                 + DBConstants.KEY_PRICE + ", "
                 + DBConstants.KEY_DESCRIPTION + ", "
                 + DBConstants.KEY_IMAGE_URL + ") "
-                + "values(1,'Mazda 323', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
+                + "values(1,'Audi R8', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CARS + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_MODEL + ", "
@@ -24,7 +24,7 @@ public class InitiateCars {
                 + DBConstants.KEY_PRICE + ", "
                 + DBConstants.KEY_DESCRIPTION + ", "
                 + DBConstants.KEY_IMAGE_URL + ") "
-                + "values(2,'Mazda 323', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
+                + "values(2,'Audi TT', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CARS + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_MODEL + ", "
@@ -32,7 +32,7 @@ public class InitiateCars {
                 + DBConstants.KEY_PRICE + ", "
                 + DBConstants.KEY_DESCRIPTION + ", "
                 + DBConstants.KEY_IMAGE_URL + ") "
-                + "values(3,'Mazda 323', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
+                + "values(3,'BMW G11', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CARS + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_MODEL + ", "
@@ -40,7 +40,7 @@ public class InitiateCars {
                 + DBConstants.KEY_PRICE + ", "
                 + DBConstants.KEY_DESCRIPTION + ", "
                 + DBConstants.KEY_IMAGE_URL + ") "
-                + "values(4,'Mazda 323', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
+                + "values(4,'BMW i3', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CARS + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_MODEL + ", "
@@ -48,7 +48,7 @@ public class InitiateCars {
                 + DBConstants.KEY_PRICE + ", "
                 + DBConstants.KEY_DESCRIPTION + ", "
                 + DBConstants.KEY_IMAGE_URL + ") "
-                + "values(5,'Mazda 323', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
+                + "values(5,'Honda City', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CARS + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_MODEL + ", "
@@ -56,7 +56,7 @@ public class InitiateCars {
                 + DBConstants.KEY_PRICE + ", "
                 + DBConstants.KEY_DESCRIPTION + ", "
                 + DBConstants.KEY_IMAGE_URL + ") "
-                + "values(6,'Mazda 323', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
+                + "values(6,'Honda Civic', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CARS + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_MODEL + ", "
@@ -64,7 +64,7 @@ public class InitiateCars {
                 + DBConstants.KEY_PRICE + ", "
                 + DBConstants.KEY_DESCRIPTION + ", "
                 + DBConstants.KEY_IMAGE_URL + ") "
-                + "values(7,'Mazda 323', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
+                + "values(7,'DeLorean DMC-12', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CARS + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_MODEL + ", "
@@ -72,7 +72,7 @@ public class InitiateCars {
                 + DBConstants.KEY_PRICE + ", "
                 + DBConstants.KEY_DESCRIPTION + ", "
                 + DBConstants.KEY_IMAGE_URL + ") "
-                + "values(8,'Mazda 323', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
+                + "values(8,'Toyota Yaris', 'Blue', '240000', 'description', 'http://needsmorejpeg.com/i/ejsr.jpeg')");
     }
     public static void initCarImages(SQLiteDatabase db) {
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CAR_IMAGES + "(" + DBConstants.KEY_ID + ","
