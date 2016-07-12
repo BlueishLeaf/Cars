@@ -24,7 +24,6 @@ public class CarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_car);
         initBundleVariables(getIntent().getExtras());
         caridtest = (TextView)findViewById(R.id.car_model_textView);
-        Log.e("Hello","Id Is :  " + initBundleVariables(getIntent().getExtras()));
         caridtest.setText(Integer.toString(bundle_id));
     }
 
