@@ -20,7 +20,7 @@ public class Car {
     private String price;
     private List<String> urls;
 
-    public Car(final int id, final String model, final String color, final String description, final String price, final List<String>urls){
+    public Car(final int id, final String model, final String color,  final String price, final String description, final List<String>urls){
 
         this.id = id;
         this.model = model;
