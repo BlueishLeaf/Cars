@@ -6,8 +6,7 @@
     <ImageView
         android:id="@+id/carPagerImage"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:adjustViewBounds="true"
-        android:scaleType="fitCenter" />
-        <!--android:contentDescription="@string/pagerImageDescription"-->
+        android:scaleType="fitXY"/>
 </LinearLayout>

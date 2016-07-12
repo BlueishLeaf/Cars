@@ -13,8 +13,6 @@ import com.example.killian.cars.Models.Car;
 import com.example.killian.cars.R;
 import com.example.killian.cars.db.SQLiteHelper;
 
-import butterknife.BindView;
-
 /**
  * @author Killian.
  * @since 11/07/2016.
@@ -22,9 +20,10 @@ import butterknife.BindView;
 
 public class CarActivity extends AppCompatActivity {
 
-    @BindView(R.id.viewPager) ViewPager viewPager;
-    @BindView(R.id.tab_layout) TabLayout tabLayout;
-    @BindView(R.id.carInfoPager) ViewPager tabViewPager;
+    private ViewPager viewPager;
+    private TabLayout tabLayout;
+    private ViewPager tabViewPager;
+
     private int bundle_id;
     private Car car;
 
@@ -32,14 +31,25 @@ public class CarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_car);
-        tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        initBundleVariables(getIntent().getExtras());
-        SQLiteHelper db = new SQLiteHelper(this);
-        car=db.getCar(bundle_id);
+        //ButterKnife.bind(this);// Must use this line to initialize the @BindViews class variables :P
 
+        // bind variables
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        tabViewPager = (ViewPager) findViewById(R.id.carInfoPager);
+
+        // get extras
+        initBundleVariables(getIntent().getExtras());
+
+        // setup data
+        SQLiteHelper db = new SQLiteHelper(this);
+        car = db.getCar(bundle_id);
+
+        // initialize views
         initCarFragmentTabs();
         initPagerAdapter();
     }
+
     private void initPagerAdapter() {
         CarActivityPagerAdapter adapter = new CarActivityPagerAdapter(this, car.urls());
         viewPager.setAdapter(adapter);
@@ -54,9 +64,7 @@ public class CarActivity extends AppCompatActivity {
                 (getSupportFragmentManager(), tabLayout.getTabCount());
         tabViewPager.setAdapter(adapter);
         tabViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        //tabLayout.setSelectedTabIndicatorColor(imageDetailColor);
-        tabLayout.addOnTabSelectedListener(new TabLayoutListener(tabViewPager));
-
+        tabLayout.setOnTabSelectedListener(new TabLayoutListener(tabViewPager));
     }
 
     private int initBundleVariables(Bundle bundle) {

@@ -68,7 +68,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.carTitleTextView.setText(carItem.getModel());
         holder.itemView.setId(carItem.getId());
         Picasso.with(context).load(carItem.getUrl()).fit().into(holder.carImageView);
-        //holder.carImageView.setImage(movie.getGenre());
     }
 
     @Override

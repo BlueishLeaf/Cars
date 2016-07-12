@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import butterknife.ButterKnife;
 import com.example.killian.cars.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -16,17 +17,18 @@ import java.util.List;
  * Created by Killian on 12/07/2016.
  */
 public class CarActivityPagerAdapter extends PagerAdapter {
-    private List<String> carIds;
+
+    private List<String> carImageUrls;
     private LayoutInflater layoutInflater;
 
     public CarActivityPagerAdapter(Context context, List<String> carIds) {
-        this.carIds = carIds;
+        this.carImageUrls = carIds;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
     public int getCount() {
-        return carIds.size();
+        return carImageUrls.size();
     }
 
     @Override
@@ -37,8 +39,8 @@ public class CarActivityPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         View item_view = layoutInflater.inflate(R.layout.car_pager_item, container, false);
-        ImageView imageView = ButterKnife.findById(item_view, R.id.carPagerImage);
-        imageView.setImageResource(Integer.parseInt(carIds.get(position)));
+        ImageView imageView = (ImageView)item_view.findViewById(R.id.carPagerImage);
+        Picasso.with(imageView.getContext()).load(carImageUrls.get(position)).fit().into(imageView);
         container.addView(item_view);
         return item_view;
     }
