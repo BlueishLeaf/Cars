@@ -85,7 +85,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         if (cursor != null) {
             if (cursor.moveToFirst()) {
                 do {
-                    cars.add(cursor.getString(2));
+                    cars.add(cursor.getString(0));
                 } while (cursor.moveToNext());
             }
             cursor.close();

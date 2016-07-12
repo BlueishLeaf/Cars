@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.killian.cars.Constants.DBConstants;
 import com.example.killian.cars.R;
+import com.example.killian.cars.db.SQLiteHelper;
 
 /**
  * @author Killian.
@@ -25,6 +26,8 @@ public class CarActivity extends AppCompatActivity {
         initBundleVariables(getIntent().getExtras());
         caridtest = (TextView)findViewById(R.id.car_model_textView);
         caridtest.setText(Integer.toString(bundle_id));
+        SQLiteHelper db=new SQLiteHelper(this);
+        db.getCar(bundle_id);
     }
 
     private int initBundleVariables(Bundle bundle) {
