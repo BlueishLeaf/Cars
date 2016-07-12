@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
         mRecyclerView.setHasFixedSize(true);
 
-        mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        mAdapter = new MyAdapter(carItemList, this.getApplicationContext());
+        mAdapter = new MyAdapter(carItemList,this);
         mRecyclerView.setAdapter(mAdapter);
     }
 }

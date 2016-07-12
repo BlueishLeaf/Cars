@@ -19,29 +19,32 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 /**
- * Created by Killian on 06/07/2016.
+ * 
+ *
+ * @author Killian.
+ * @since 06/07/2016.
  */
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private List<CarItem> carItemList;
     private Context context;
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView carTitleTextView;
         public ImageView carImageView;
 
-        public MyViewHolder(View view) {
-            super(view);
-            carTitleTextView = (TextView) view.findViewById(R.id.car_item_title);
-            carImageView = (ImageView) view.findViewById(R.id.car_item_image);
-            view.setOnClickListener(new View.OnClickListener() {
+        public MyViewHolder(final View itemView) {
+            super(itemView);
+            carTitleTextView = (TextView) itemView.findViewById(R.id.car_item_title);
+            carImageView = (ImageView) itemView.findViewById(R.id.car_item_image);
+            itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(context, CarActivity.class);
+                    Intent intent = new Intent(itemView.getContext(), CarActivity.class);
                     Bundle bundle = new Bundle();
-                    bundle.putInt(DBConstants.BUNDLE_CAR_ID, view.getId());
+                    bundle.putInt(DBConstants.BUNDLE_CAR_ID, itemView.getId());
                     intent.putExtras(bundle);
-                    context.startActivity(intent);
+                    itemView.getContext().startActivity(intent);
                 }
             });
         }
@@ -57,7 +60,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.caritemrow, parent, false);
-
         return new MyViewHolder(itemView);
     }
 
@@ -66,7 +68,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         CarItem carItem = carItemList.get(position);
         holder.carTitleTextView.setText(carItem.getModel());
         holder.itemView.setId(carItem.getId());
-        Picasso.with(context).load(carItem.getUrl()).into(holder.carImageView);
+        Picasso.with(context).load(carItem.getUrl()).fit().into(holder.carImageView);
         //holder.carImageView.setImage(movie.getGenre());
     }
 
