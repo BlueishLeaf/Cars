@@ -6,8 +6,10 @@ import com.example.killian.cars.Constants.DBConstants;
 
 
 /**
- * Created by Killian on 07/07/2016.
+ * @author Killian.
+ * @since 11/07/2016.
  */
+
 public class InitiateCars {
     public static void initCars(SQLiteDatabase db) {
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CARS + "(" + DBConstants.KEY_ID + ","

@@ -19,11 +19,10 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 /**
- * 
- *
  * @author Killian.
  * @since 06/07/2016.
  */
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private List<CarItem> carItemList;

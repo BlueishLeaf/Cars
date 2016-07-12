@@ -17,7 +17,13 @@ import com.example.killian.cars.db.SQLiteHelper;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Killian.
+ * @since 11/07/2016.
+ */
+
 //This class is used to populate our collection view of cars
+
 public class MainActivity extends AppCompatActivity {
 
     private List<CarItem> carItemList = new ArrayList<>();

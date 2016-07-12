@@ -10,8 +10,10 @@ import com.example.killian.cars.Constants.DBConstants;
 import com.example.killian.cars.R;
 
 /**
- * Created by Killian on 11/07/2016.
+ * @author Killian.
+ * @since 11/07/2016.
  */
+
 public class CarActivity extends AppCompatActivity {
     private int bundle_id;
     TextView caridtest;
@@ -21,7 +23,7 @@ public class CarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_car);
         initBundleVariables(getIntent().getExtras());
-        caridtest = (TextView)findViewById(R.id.car_model_textView); //ToDO problem cant find view element.
+        caridtest = (TextView)findViewById(R.id.car_model_textView);
         Log.e("Hello","Id Is :  " + initBundleVariables(getIntent().getExtras()));
         caridtest.setText(Integer.toString(bundle_id));
     }

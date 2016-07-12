@@ -1,8 +1,10 @@
 package com.example.killian.cars.Models;
 
 /**
- * Created by Killian on 06/07/2016.
+ * @author Killian.
+ * @since 11/07/2016.
  */
+
 public class CarItem {
 
     //CarItem is the framework for the cards of cars in the catalog

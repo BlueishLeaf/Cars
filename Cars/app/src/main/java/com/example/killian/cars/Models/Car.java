@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Killian on 06/07/2016.
+ * @author Killian.
+ * @since 11/07/2016.
  */
 
 public class Car {
