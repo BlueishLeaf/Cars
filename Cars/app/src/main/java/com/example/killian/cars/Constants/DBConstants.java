@@ -20,7 +20,7 @@ public class DBConstants {
     public static final String BUNDLE_CAR_ID = "carId";
     public static final int SPLASH_DISPLAY_LENGTH = 1000;
     public static final String CAR_TAB_INFO = "INFO";
-    public static final String CAR_TAB_COMMENTS = "COMMENTS";
+    public static final String CAR_TAB_FEEDBACK = "FEEDBACK";
     public static final String MONEY_DOLLAR_SIGN = "$";
     public static final String KEY_CAR_IMAGE_URL = "car_image_url";
 }
