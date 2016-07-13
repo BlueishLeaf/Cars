@@ -20,7 +20,7 @@ public class AnimationUtils {
      */
     public static Animation get_slide_up(Context context, int duration, int offset) {
         Animation slide_up = android.view.animation.AnimationUtils.loadAnimation(context,
-                R.anim.slide_up);
+                R.anim.slide_down);
         slide_up.setDuration(duration);
         slide_up.setStartOffset(offset);
         return slide_up;
