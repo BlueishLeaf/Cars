@@ -1,6 +1,5 @@
 package com.example.killian.cars.Models;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
