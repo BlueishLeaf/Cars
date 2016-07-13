@@ -9,6 +9,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -60,12 +61,13 @@ public class CarActivity extends AppCompatActivity {
 
         initPagerAdapter();
         initCarFragmentTabs();
+
+        new Task().execute();
     }
 
     private void initPagerAdapter() {
         CarActivityPagerAdapter adapter = new CarActivityPagerAdapter(this, car.urls());
         viewPager.setAdapter(adapter);
-
     }
 
     private void initCarFragmentTabs() {
@@ -82,5 +84,25 @@ public class CarActivity extends AppCompatActivity {
 
     private void initBundleVariables(Bundle bundle) {
         bundle_car_id = bundle.getInt(DBConstants.BUNDLE_CAR_ID);
+    }
+
+    class Task extends AsyncTask<String, Integer, Boolean> {
+        @Override
+        protected void onPreExecute() {
+            tabLayout.setVisibility(View.GONE);
+            super.onPreExecute();
+        }
+
+        @Override
+        protected void onPostExecute(Boolean result) {
+            tabLayout.setVisibility(View.GONE);
+            super.onPostExecute(result);
+        }
+
+        @Override
+        protected Boolean doInBackground(String... params) {
+            // get data
+            return null;
+        }
     }
 }

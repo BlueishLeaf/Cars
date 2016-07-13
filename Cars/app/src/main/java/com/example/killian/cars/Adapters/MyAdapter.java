@@ -33,7 +33,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private List<CarItem> carItemList;
     private Context context;
-    private int detailColor;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView carTitleTextView;
@@ -49,20 +48,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                     Intent intent = new Intent(itemView.getContext(), CarActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt(DBConstants.BUNDLE_CAR_ID, itemView.getId());
-                    bundle.putInt("bundle_car_color", detailColor);
                     intent.putExtras(bundle);
                     itemView.getContext().startActivity(intent);
                 }
             });
-
         }
-
     }
 
     public MyAdapter(List<CarItem> carItemList, Context context) {
         this.carItemList = carItemList;
         this.context = context;
-
     }
 
     @Override
@@ -85,24 +80,5 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public int getItemCount() {
         return carItemList.size();
-
     }
-
-    private Target target = new Target() {
-        @Override
-        public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
-            // Bitmap is loaded, use image here
-            detailColor = UIUtils.getDetailColorFromImage(bitmap);
-        }
-
-        @Override
-        public void onBitmapFailed(Drawable errorDrawable) {
-
-        }
-
-        @Override
-        public void onPrepareLoad(Drawable placeHolderDrawable) {
-
-        }
-    };
 }
