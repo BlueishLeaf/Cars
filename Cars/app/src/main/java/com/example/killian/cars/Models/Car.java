@@ -36,19 +36,19 @@ public class Car {
         return id;
     }
 
-    public String model(){
+    public String getModel(){
         return model;
     }
 
-    public String color(){
+    public String getColor(){
         return color;
     }
 
-    public String description(){
+    public String getDescription(){
         return description;
     }
 
-    public String price(){
+    public String getPrice(){
         return price;
     }
 

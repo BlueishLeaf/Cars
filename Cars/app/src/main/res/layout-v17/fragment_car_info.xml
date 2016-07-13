@@ -1,40 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp">
 
     <TextView
-        android:id="@+id/carName"
-        android:layout_width="match_parent"
+        android:id="@+id/carModel"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textColor="#000000"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:text="model" />
 
     <TextView
         android:id="@+id/carPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:text="price"
+        android:layout_below="@+id/carModel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
-        android:layout_width="10dp"
-        android:layout_height="10dp"
-        android:id="@+id/imageView"
-        android:layout_below="@+id/carName"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="71dp" />
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/carColor"
+        android:layout_alignBottom="@+id/carModel"
+        android:layout_toRightOf="@+id/carModel"
+        android:layout_toEndOf="@+id/carModel" />
 
     <TextView
         android:id="@+id/carDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:text="description"
+        android:layout_below="@+id/carPrice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 
