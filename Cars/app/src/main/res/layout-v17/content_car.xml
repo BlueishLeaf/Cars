@@ -21,7 +21,7 @@
         <android.support.v4.view.ViewPager
             android:id="@+id/carTabPager"
             android:layout_width="fill_parent"
-            android:layout_height="610dp"
+            android:layout_height="1200dp"
             android:layout_below="@id/tab_layout" />
     </RelativeLayout>
 </android.support.v4.widget.NestedScrollView>

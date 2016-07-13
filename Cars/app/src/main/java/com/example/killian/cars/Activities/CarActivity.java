@@ -8,6 +8,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.killian.cars.Adapters.CarActivityFragmentAdapter;
 import com.example.killian.cars.Adapters.CarActivityPagerAdapter;
@@ -15,8 +16,11 @@ import com.example.killian.cars.Constants.DBConstants;
 import com.example.killian.cars.Listeners.TabLayoutListener;
 import com.example.killian.cars.Models.Car;
 import com.example.killian.cars.R;
+import com.example.killian.cars.Utils.AnimationUtils;
 import com.example.killian.cars.Utils.UIUtils;
 import com.example.killian.cars.db.SQLiteHelper;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 /**
  * The class {@code CarActivity} governs the framework of a specific car's page
@@ -32,9 +36,11 @@ public class CarActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager tabViewPager;
 
-    private Drawable currentImageView;
+    private ImageView currentImageView;
     private int bundle_id;
+    private int detailColor;
     private Car car;
+    private ImageView image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,21 +60,34 @@ public class CarActivity extends AppCompatActivity {
         SQLiteHelper db = new SQLiteHelper(this);
         car = db.getCar(bundle_id);
 
+        Picasso.with(this)
+                .load(car.urls().get(0))
+                .into(new Target() {
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
 
-        // initialize views
-        initPagerAdapter();
-        BitmapDrawable bitmapDrawable = ((BitmapDrawable)currentImageView);
-        Bitmap bitmap = bitmapDrawable.getBitmap();
-        UIUtils.getSecondaryColorFromImage(bitmap);
-        initCarFragmentTabs();
+                        // initialize views
+                        initPagerAdapter();
+                        detailColor=UIUtils.getSecondaryColorFromImage(bitmap);
+                        initCarFragmentTabs();
+                    }
+
+                    @Override
+                    public void onBitmapFailed(Drawable errorDrawable) {
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(Drawable placeHolderDrawable) {
+
+                    }
+                });
 
     }
 
     private void initPagerAdapter() {
         CarActivityPagerAdapter adapter = new CarActivityPagerAdapter(this, car.urls());
         viewPager.setAdapter(adapter);
-        currentImageView = adapter.getCurrentImageView();
-        //carImagePager.setAnimation(AnimationUtils.get_slide_down(this, 500, 500));
 
     }
 
@@ -76,12 +95,12 @@ public class CarActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText(DBConstants.CAR_TAB_INFO));
         tabLayout.addTab(tabLayout.newTab().setText(DBConstants.CAR_TAB_FEEDBACK));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+        tabLayout.setSelectedTabIndicatorColor(detailColor);
         final CarActivityFragmentAdapter adapter = new CarActivityFragmentAdapter
                 (getSupportFragmentManager(), tabLayout.getTabCount());
         tabViewPager.setAdapter(adapter);
         tabViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(new TabLayoutListener(tabViewPager));
-
     }
 
     private int initBundleVariables(Bundle bundle) {

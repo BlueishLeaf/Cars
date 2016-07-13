@@ -2,6 +2,7 @@ package com.example.killian.cars.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -74,7 +75,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.carTitleTextView.setText(carItem.getModel());
         holder.itemView.setId(carItem.getId());
         Picasso.with(context).load(carItem.getUrl()).fit().into(holder.carImageView);
-
     }
 
     @Override
