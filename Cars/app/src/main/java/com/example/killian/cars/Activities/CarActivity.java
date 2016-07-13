@@ -77,5 +77,5 @@ public class CarActivity extends AppCompatActivity {
         return bundle_id = bundle.getInt(DBConstants.BUNDLE_CAR_ID);
 
     }
-    
+
 }

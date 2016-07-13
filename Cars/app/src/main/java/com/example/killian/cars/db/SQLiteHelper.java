@@ -30,11 +30,11 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createCarsTable = "CREATE TABLE "+ DBConstants.DATABASE_TABLE_CARS +" (id INTEGER PRIMARY KEY AUTOINCREMENT, model TEXT, color TEXT, price TEXT, description TEXT, imageurl TEXT)";
+        String createCarsTable = "CREATE TABLE "+ DBConstants.DATABASE_TABLE_CARS +" (id INTEGER PRIMARY KEY AUTOINCREMENT, model TEXT, color TEXT, price TEXT, description TEXT, image_url TEXT)";
         db.execSQL(createCarsTable);
         InitiateCars.initCars(db);
 
-        String createCarImageTable = "CREATE TABLE "+ DBConstants.DATABASE_TABLE_CAR_IMAGES +"(id INTEGER PRIMARY KEY AUTOINCREMENT, carId INTEGER, car_image_url TEXT)";
+        String createCarImageTable = "CREATE TABLE "+ DBConstants.DATABASE_TABLE_CAR_IMAGES +"(id INTEGER PRIMARY KEY AUTOINCREMENT, car_id INTEGER, car_image_url TEXT)";
         db.execSQL(createCarImageTable);
         InitiateCars.initCarImages(db);
 
@@ -87,7 +87,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
         List<String> cars = new ArrayList<>();
 
-        Cursor cursor = db.rawQuery("SELECT car_image_url from " + DBConstants.DATABASE_TABLE_CAR_IMAGES + " WHERE carId = " + id, null);
+        Cursor cursor = db.rawQuery("SELECT car_image_url from " + DBConstants.DATABASE_TABLE_CAR_IMAGES + " WHERE car_id = " + id, null);
 
         if (cursor != null) {
             if (cursor.moveToFirst()) {
