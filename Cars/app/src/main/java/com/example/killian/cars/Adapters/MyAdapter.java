@@ -19,6 +19,8 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 /**
+ * The class (@code MyAdapter) binds data from the database to the car item list
+ *
  * @author Killian.
  * @since 06/07/2016.
  */
@@ -44,15 +46,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                     bundle.putInt(DBConstants.BUNDLE_CAR_ID, itemView.getId());
                     intent.putExtras(bundle);
                     itemView.getContext().startActivity(intent);
+
                 }
             });
-        }
-    }
 
+        }
+
+    }
 
     public MyAdapter(List<CarItem> carItemList, Context context) {
         this.carItemList = carItemList;
         this.context = context;
+
     }
 
     @Override
@@ -60,6 +65,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.caritemrow, parent, false);
         return new MyViewHolder(itemView);
+
     }
 
     @Override
@@ -68,10 +74,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.carTitleTextView.setText(carItem.getModel());
         holder.itemView.setId(carItem.getId());
         Picasso.with(context).load(carItem.getUrl()).fit().into(holder.carImageView);
+
     }
 
     @Override
     public int getItemCount() {
         return carItemList.size();
+
     }
+
 }

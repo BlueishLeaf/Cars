@@ -8,14 +8,20 @@ import com.example.killian.cars.Fragments.CarActivityFeedbackFragment;
 import com.example.killian.cars.Fragments.CarActivityInfoFragment;
 
 /**
- * Created by Killian on 12/07/2016.
+ * The class (@code CarActivityFragmentAdapter) binds the car's data from
+ * the database to the fragment
+ *
+ * @author Killian.
+ * @since 12/07/2016.
  */
+
 public class CarActivityFragmentAdapter extends FragmentStatePagerAdapter {
     int numOfTabs;
 
     public CarActivityFragmentAdapter(FragmentManager fragmentManager, int numOfTabs) {
         super(fragmentManager);
         this.numOfTabs = numOfTabs;
+
     }
 
     @Override
@@ -27,11 +33,14 @@ public class CarActivityFragmentAdapter extends FragmentStatePagerAdapter {
                 return new CarActivityFeedbackFragment();
             default:
                 return null;
+
         }
+
     }
 
     @Override
     public int getCount() {
         return numOfTabs;
     }
+
 }

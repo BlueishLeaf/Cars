@@ -14,12 +14,15 @@ import com.example.killian.cars.R;
 import com.example.killian.cars.db.SQLiteHelper;
 
 /**
+ * The class {@code CarActivity} governs the framework of a specific car's page
+ *
  * @author Killian.
  * @since 11/07/2016.
  */
 
 public class CarActivity extends AppCompatActivity {
 
+    //Variable definitions
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private ViewPager tabViewPager;
@@ -34,9 +37,9 @@ public class CarActivity extends AppCompatActivity {
         //ButterKnife.bind(this);// Must use this line to initialize the @BindViews class variables :P
 
         // bind variables
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        viewPager = (ViewPager) findViewById(R.id.carImagePager);
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabViewPager = (ViewPager) findViewById(R.id.carInfoPager);
+        tabViewPager = (ViewPager) findViewById(R.id.carTabPager);
 
         // get extras
         initBundleVariables(getIntent().getExtras());
@@ -48,12 +51,14 @@ public class CarActivity extends AppCompatActivity {
         // initialize views
         initCarFragmentTabs();
         initPagerAdapter();
+
     }
 
     private void initPagerAdapter() {
         CarActivityPagerAdapter adapter = new CarActivityPagerAdapter(this, car.urls());
         viewPager.setAdapter(adapter);
-        //viewPager.setAnimation(AnimationUtils.get_slide_down(this, 500, 500));
+        //carImagePager.setAnimation(AnimationUtils.get_slide_down(this, 500, 500));
+
     }
 
     private void initCarFragmentTabs() {
@@ -65,9 +70,12 @@ public class CarActivity extends AppCompatActivity {
         tabViewPager.setAdapter(adapter);
         tabViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(new TabLayoutListener(tabViewPager));
+
     }
 
     private int initBundleVariables(Bundle bundle) {
         return bundle_id = bundle.getInt(DBConstants.BUNDLE_CAR_ID);
+
     }
+    
 }

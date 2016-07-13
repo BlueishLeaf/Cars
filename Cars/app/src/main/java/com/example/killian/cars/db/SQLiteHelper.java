@@ -14,6 +14,8 @@ import java.util.List;
 
 
 /**
+ * The class (@code SQLiteHelper) sets up our SQLite database
+ *
  * @author Killian.
  * @since 11/07/2016.
  */
@@ -23,6 +25,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     public SQLiteHelper(Context context) {
         super(context, DBConstants.DATABASE_NAME, null, DBConstants.DATA_BASE_VERSION);
+
     }
 
     @Override
@@ -37,17 +40,20 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
         /*String createCarCommentsTable = "CREATE TABLE Car_comments (id INTEGER PRIMARY KEY AUTOINCREMENT, CarId INTEGER, comment TEXT, profileImageId TEXT)";
         db.execSQL(createCarCommentsTable);*/
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
     }
 
     /**
-     * Return a list of cars to display in {@code CarGalleryActivity}
+     * Return a list of cars to display in {@code MainActivity}
      *
      * @return List<CarItem>
      */
+
     public List<CarItem> getAllCars() {
 
         SQLiteDatabase db = this.getWritableDatabase();
@@ -72,8 +78,9 @@ public class SQLiteHelper extends SQLiteOpenHelper {
      * Get a list of car image URLs for a specific car
      *
      * @param id car id
-     * @return List<String> image URLs
+     * @return List<String> cars
      */
+
     public List<String> getCarImageResourceIds(int id) {
 
         SQLiteDatabase db = this.getReadableDatabase();

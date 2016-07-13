@@ -1,14 +1,13 @@
 package com.example.killian.cars.Models;
 
 /**
+ * This class (@code CarItem) governs the framework for the cards of cars in the catalog
+ *
  * @author Killian.
  * @since 11/07/2016.
  */
 
 public class CarItem {
-
-    //CarItem is the framework for the cards of cars in the catalog
-    //CarItem will have an id, an image URL, and a model
 
     private int id;
     private String model;
@@ -32,4 +31,5 @@ public class CarItem {
     public String getUrl(){
         return url;
     }
+
 }

@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * This class (@code Car) governs the framework for the car object and its corresponding variables
+ *
  * @author Killian.
  * @since 11/07/2016.
  */
@@ -28,6 +30,7 @@ public class Car {
         this.description = description;
         this.price = price;
         this.urls = urls;
+
     }
 
     public int getId(){
@@ -53,4 +56,5 @@ public class Car {
     public List<String> urls(){
         return urls;
     }
+
 }

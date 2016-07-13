@@ -6,6 +6,8 @@ import com.example.killian.cars.Constants.DBConstants;
 
 
 /**
+ * The class (@code InitiateCars) contains all the data for the database of cars
+ *
  * @author Killian.
  * @since 11/07/2016.
  */
@@ -108,6 +110,7 @@ public class InitiateCars {
                 "\n" +
                 "Nulla eu augue tempus, luctus arcu a, blandit arcu. Cras orci mauris, faucibus et odio id, mattis hendrerit nisi. Suspendisse potenti. Donec eros quam, luctus sed semper luctus, vulputate consectetur eros. Nam pharetra tincidunt pellentesque. Nunc ac metus dapibus, sagittis nulla porta, imperdiet leo. Integer maximus quis ligula id maximus. Mauris id leo consequat orci ornare tincidunt nec at est. Quisque sit amet tellus commodo, aliquet nunc vitae, varius lacus. Quisque dolor ante, tempus sed elit a, ullamcorper ornare nunc.', 'http://needsmorejpeg.com/i/ejsy.jpeg')");
     }
+
     public static void initCarImages(SQLiteDatabase db) {
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CAR_IMAGES + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_CAR_ID + ","

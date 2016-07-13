@@ -43,5 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
         mAdapter = new MyAdapter(carItemList,this);
         mRecyclerView.setAdapter(mAdapter);
+
     }
+
 }
