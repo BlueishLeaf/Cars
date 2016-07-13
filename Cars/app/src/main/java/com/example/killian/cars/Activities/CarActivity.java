@@ -1,9 +1,13 @@
 package com.example.killian.cars.Activities;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 
 import com.example.killian.cars.Adapters.CarActivityFragmentAdapter;
 import com.example.killian.cars.Adapters.CarActivityPagerAdapter;
@@ -11,6 +15,7 @@ import com.example.killian.cars.Constants.DBConstants;
 import com.example.killian.cars.Listeners.TabLayoutListener;
 import com.example.killian.cars.Models.Car;
 import com.example.killian.cars.R;
+import com.example.killian.cars.Utils.UIUtils;
 import com.example.killian.cars.db.SQLiteHelper;
 
 /**
@@ -27,6 +32,7 @@ public class CarActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager tabViewPager;
 
+    private Drawable currentImageView;
     private int bundle_id;
     private Car car;
 
@@ -48,15 +54,20 @@ public class CarActivity extends AppCompatActivity {
         SQLiteHelper db = new SQLiteHelper(this);
         car = db.getCar(bundle_id);
 
+
         // initialize views
-        initCarFragmentTabs();
         initPagerAdapter();
+        BitmapDrawable bitmapDrawable = ((BitmapDrawable)currentImageView);
+        Bitmap bitmap = bitmapDrawable.getBitmap();
+        UIUtils.getSecondaryColorFromImage(bitmap);
+        initCarFragmentTabs();
 
     }
 
     private void initPagerAdapter() {
         CarActivityPagerAdapter adapter = new CarActivityPagerAdapter(this, car.urls());
         viewPager.setAdapter(adapter);
+        currentImageView = adapter.getCurrentImageView();
         //carImagePager.setAnimation(AnimationUtils.get_slide_down(this, 500, 500));
 
     }

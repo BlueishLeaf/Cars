@@ -1,6 +1,7 @@
 package com.example.killian.cars.Adapters;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,11 +25,11 @@ public class CarActivityPagerAdapter extends PagerAdapter {
     //Defining the list of URLs
     private List<String> carImageUrls;
     private LayoutInflater layoutInflater;
+    private Drawable currentImageView;
 
     public CarActivityPagerAdapter(Context context, List<String> carIds) {
         this.carImageUrls = carIds;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
     }
 
     @Override
@@ -49,14 +50,16 @@ public class CarActivityPagerAdapter extends PagerAdapter {
         ImageView imageView = (ImageView)item_view.findViewById(R.id.carPagerImage);
         Picasso.with(imageView.getContext()).load(carImageUrls.get(position)).fit().into(imageView);
         container.addView(item_view);
+        currentImageView=imageView.getDrawable();
         return item_view;
-
     }
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView((LinearLayout) object);
-
     }
 
+    public Drawable getCurrentImageView() {
+        return currentImageView;
+    }
 }
