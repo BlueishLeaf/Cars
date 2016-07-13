@@ -3,10 +3,12 @@ package com.example.killian.cars.Activities;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,11 +38,9 @@ public class CarActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager tabViewPager;
 
-    private ImageView currentImageView;
-    private int bundle_id;
+    private int bundle_car_id;
     private int detailColor;
     private Car car;
-    private ImageView image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,34 +55,11 @@ public class CarActivity extends AppCompatActivity {
 
         // get extras
         initBundleVariables(getIntent().getExtras());
+        SQLiteHelper db = new SQLiteHelper(getApplicationContext());
+        car = db.getCar(bundle_car_id);
 
-        // setup data
-        SQLiteHelper db = new SQLiteHelper(this);
-        car = db.getCar(bundle_id);
-
-        Picasso.with(this)
-                .load(car.urls().get(0))
-                .into(new Target() {
-                    @Override
-                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
-
-                        // initialize views
-                        initPagerAdapter();
-                        detailColor=UIUtils.getSecondaryColorFromImage(bitmap);
-                        initCarFragmentTabs();
-                    }
-
-                    @Override
-                    public void onBitmapFailed(Drawable errorDrawable) {
-
-                    }
-
-                    @Override
-                    public void onPrepareLoad(Drawable placeHolderDrawable) {
-
-                    }
-                });
-
+        initPagerAdapter();
+        initCarFragmentTabs();
     }
 
     private void initPagerAdapter() {
@@ -103,9 +80,7 @@ public class CarActivity extends AppCompatActivity {
         tabLayout.setOnTabSelectedListener(new TabLayoutListener(tabViewPager));
     }
 
-    private int initBundleVariables(Bundle bundle) {
-        return bundle_id = bundle.getInt(DBConstants.BUNDLE_CAR_ID);
-
+    private void initBundleVariables(Bundle bundle) {
+        bundle_car_id = bundle.getInt(DBConstants.BUNDLE_CAR_ID);
     }
-
 }

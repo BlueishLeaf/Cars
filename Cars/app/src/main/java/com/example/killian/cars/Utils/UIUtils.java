@@ -43,8 +43,7 @@ public class UIUtils {
      * @param resourceId image id to get color from
      * @return integer value of detail color from an image
      */
-    public static int getDetailColorFromImage(Context context, int resourceId) {
-        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), resourceId);
+    public static int getDetailColorFromImage(Bitmap bitmap) {
         ColorArt colorArt = new ColorArt(bitmap);
         return colorArt.getDetailColor();
     }

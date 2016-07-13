@@ -2,6 +2,7 @@ package com.example.killian.cars.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -15,7 +16,9 @@ import com.example.killian.cars.Activities.CarActivity;
 import com.example.killian.cars.Constants.DBConstants;
 import com.example.killian.cars.Models.CarItem;
 import com.example.killian.cars.R;
+import com.example.killian.cars.Utils.UIUtils;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 import java.util.List;
 
@@ -30,8 +33,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private List<CarItem> carItemList;
     private Context context;
+    private int detailColor;
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView carTitleTextView;
         public ImageView carImageView;
 
@@ -45,9 +49,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                     Intent intent = new Intent(itemView.getContext(), CarActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt(DBConstants.BUNDLE_CAR_ID, itemView.getId());
+                    bundle.putInt("bundle_car_color", detailColor);
                     intent.putExtras(bundle);
                     itemView.getContext().startActivity(intent);
-
                 }
             });
 
@@ -74,6 +78,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         CarItem carItem = carItemList.get(position);
         holder.carTitleTextView.setText(carItem.getModel());
         holder.itemView.setId(carItem.getId());
+        // set image tag as color int(maybe)>>>
         Picasso.with(context).load(carItem.getUrl()).fit().into(holder.carImageView);
     }
 
@@ -83,4 +88,21 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     }
 
+    private Target target = new Target() {
+        @Override
+        public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+            // Bitmap is loaded, use image here
+            detailColor = UIUtils.getDetailColorFromImage(bitmap);
+        }
+
+        @Override
+        public void onBitmapFailed(Drawable errorDrawable) {
+
+        }
+
+        @Override
+        public void onPrepareLoad(Drawable placeHolderDrawable) {
+
+        }
+    };
 }
