@@ -7,7 +7,8 @@ import android.graphics.BitmapFactory;
 import org.michaelevans.colorart.library.ColorArt;
 
 /**
- * Created by Killian on 12/07/2016.
+ * @author Killian.
+ * @since 12/07/2016.
  */
 public class UIUtils {
 

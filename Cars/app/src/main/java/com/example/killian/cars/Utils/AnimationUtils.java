@@ -6,7 +6,8 @@ import android.view.animation.Animation;
 import com.example.killian.cars.R;
 
 /**
- * Created by Killian on 12/07/2016.
+ * @author Killian.
+ * @since 12/07/2016.
  */
 public class AnimationUtils {
 
