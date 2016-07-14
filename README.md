@@ -10,6 +10,6 @@ A catalog of cars
 * ~~Car Item Styling~~
 * ~~Car service~~
 * ~~Car page~~
-* ~~Populate feedback database~~
+* Populate feedback database
 * Shared element activity transition
 * Testing
