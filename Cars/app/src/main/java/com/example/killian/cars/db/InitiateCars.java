@@ -240,557 +240,557 @@ public class InitiateCars {
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(1, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(1, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(2, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(2, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(3, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(3, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(4, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(4, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(5, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(5, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(6, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(6, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(7, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(7, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(8, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(8, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(9, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(9, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(10, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(10, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(11, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(11, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(12, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(12, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(13, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(13, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(14, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(14, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(15, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(15, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(16, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(16, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(17, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(17, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(18, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(18, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(19, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(19, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(20, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(20, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(21, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(21, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(22, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(22, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(23, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(23, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(24, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(24, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(25, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(25, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(26, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(26, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(27, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(27, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(28, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.)");
+                + "values(28, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(29, 'SatanRocksMySocks', 3, 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(29, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(30, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(30, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(31, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(31, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(32, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(32, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(33, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(33, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(34, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(34, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(35, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(35, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(36, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(36, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(37, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(37, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(38, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(38, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(39, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(39, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(40, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(40, 'SatanRocksMySocks', 4, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(41, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(41, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(42, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(42, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(43, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(43, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(44, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(44, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(45, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(45, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(46, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(46, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(47, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(47, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(48, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(48, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(49, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(49, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(50, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(50, 'SatanRocksMySocks', 5, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(51, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(51, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(52, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(52, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(53, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(53, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(54, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(54, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(55, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(55, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(56, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(56, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(57, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(57, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(58, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.)");
+                + "values(58, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(59, 'SatanRocksMySocks', 6, 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(59, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(60, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(60, 'SatanRocksMySocks', 6, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(61, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(61, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(62, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(62, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(63, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(63, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(64, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(64, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(65, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(65, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(66, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(66, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(67, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(67, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(68, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(68, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(69, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(69, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(70, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(70, 'SatanRocksMySocks', 7, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(71, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(71, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(72, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(72, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(73, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(73, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(74, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(74, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(75, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(75, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(76, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(76, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(77, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(77, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(78, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(78, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(79, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(79, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(80, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl. Pellentesque et justo ornare, scelerisque lacus hendrerit, convallis nibh. Donec consectetur vehicula dignissim. Nunc non eros pretium, ornare urna at, faucibus tellus. Phasellus vitae dignissim nulla, at.')");
+                + "values(80, 'SatanRocksMySocks', 8, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
     }
 }

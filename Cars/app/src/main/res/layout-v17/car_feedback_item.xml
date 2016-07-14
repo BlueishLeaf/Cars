@@ -7,12 +7,10 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:id="@+id/user_avatar"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="20dp" />
+                android:layout_margin="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -21,20 +19,20 @@
                 android:text="Username"
                 android:id="@+id/user_name"
                 android:layout_column="5"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/user_avatar"
-                android:layout_toEndOf="@+id/user_avatar"
-                android:layout_marginLeft="20dp" />
+                android:layout_alignBottom="@+id/user_avatar"
+                android:layout_alignLeft="@+id/user_feedback"
+                android:layout_alignStart="@+id/user_feedback" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Feedback"
+                android:text="Feedbackkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
                 android:id="@+id/user_feedback"
                 android:layout_column="15"
+                android:textAlignment="textStart"
                 android:layout_below="@+id/user_avatar"
-                android:layout_alignLeft="@+id/user_name"
-                android:layout_alignStart="@+id/user_name" />
+                android:layout_toRightOf="@+id/user_avatar"
+                android:layout_toEndOf="@+id/user_avatar" />
 
 </RelativeLayout>
