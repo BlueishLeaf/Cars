@@ -24,7 +24,7 @@ import com.squareup.picasso.Target;
 import java.util.List;
 
 /**
- * The class (@code MyAdapter) binds data from the database to the car item list
+ * The class (@code CarActivityFeedbackAdapter) binds data from the database to the feedback section
  *
  * @author Killian.
  * @since 14/07/2016.

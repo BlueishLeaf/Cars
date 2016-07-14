@@ -233,11 +233,215 @@ public class InitiateCars {
                 + "values(24,'8', 'https://s32.postimg.org/j1j6mhlxh/toyota_yaris_red_5_1.jpg')");
 
     }
+
     public static void initCarFeedback(SQLiteDatabase db) {
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(1,'SatanRocksMySocks', 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+                + "values(1, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(2, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(3, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(4, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(5, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(6, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(7, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(8, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(9, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(10, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(11, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(12, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(13, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(14, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(15, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(16, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(17, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(18, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(19, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(20, 'SatanRocksMySocks', 2, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(21, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(22, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(23, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(24, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(25, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(26, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(27, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(28, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(29, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_CAR_ID + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(30, 'SatanRocksMySocks', 3, 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
     }
 }

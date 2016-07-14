@@ -40,7 +40,7 @@ public class CarActivityFeedbackFragment extends Fragment {
         initBundleVariables(getActivity().getIntent().getExtras());
 
         SQLiteHelper db = new SQLiteHelper(getActivity().getApplicationContext());
-        List<FeedbackItem> feedbackItems = db.getAllFeedback(bundle_id);
+        List<FeedbackItem> feedbackItems = db.getCarFeedback(bundle_id);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.feedback_recycler_view);
         mLayoutManager = new LinearLayoutManager(getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);

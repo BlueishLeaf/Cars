@@ -128,7 +128,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         return car;
     }
 
-    public List<FeedbackItem> getAllFeedback(final int carId) {
+    public List<FeedbackItem> getCarFeedback(final int carId) {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
