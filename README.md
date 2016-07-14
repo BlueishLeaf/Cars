@@ -12,4 +12,3 @@ A catalog of cars
 * ~~Car page~~
 * Populate feedback database
 * Shared element activity transition
-* Testing
