@@ -25,8 +25,6 @@ public class CarActivityPagerAdapter extends PagerAdapter {
     //Defining the list of URLs
     private List<String> carImageUrls;
     private LayoutInflater layoutInflater;
-    private Drawable currentImageView;
-
 
     public CarActivityPagerAdapter(Context context, List<String> carIds) {
         this.carImageUrls = carIds;
@@ -36,13 +34,11 @@ public class CarActivityPagerAdapter extends PagerAdapter {
     @Override
     public int getCount() {
         return carImageUrls.size();
-
     }
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
         return (view == object);
-
     }
 
     @Override
@@ -57,9 +53,5 @@ public class CarActivityPagerAdapter extends PagerAdapter {
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView((LinearLayout) object);
-    }
-
-    public Drawable getCurrentImageView() {
-        return currentImageView;
     }
 }

@@ -21,7 +21,6 @@ public class CarActivityFragmentAdapter extends FragmentStatePagerAdapter {
     public CarActivityFragmentAdapter(FragmentManager fragmentManager, int numOfTabs) {
         super(fragmentManager);
         this.numOfTabs = numOfTabs;
-
     }
 
     @Override
@@ -33,9 +32,7 @@ public class CarActivityFragmentAdapter extends FragmentStatePagerAdapter {
                 return new CarActivityFeedbackFragment();
             default:
                 return null;
-
         }
-
     }
 
     @Override

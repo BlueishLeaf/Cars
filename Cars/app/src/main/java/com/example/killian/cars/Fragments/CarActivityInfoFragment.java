@@ -21,13 +21,12 @@ import com.example.killian.cars.db.SQLiteHelper;
  * @author Killian
  * @since 12/07/2016.
  */
-
 public class CarActivityInfoFragment extends Fragment {
+
     private TextView model;
     private ImageView color;
     private TextView price;
     private TextView description;
-
     private int bundle_id;
 
     @Override
@@ -36,16 +35,16 @@ public class CarActivityInfoFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_car_info, container, false);
         initBundleVariables(getActivity().getIntent().getExtras());
 
-        model=(TextView) view.findViewById(R.id.carModel);
-        color=(ImageView) view.findViewById(R.id.carColor);
-        price=(TextView) view.findViewById(R.id.carPrice);
-        description=(TextView) view.findViewById(R.id.carDescription);
+        model = (TextView) view.findViewById(R.id.carModel);
+        color = (ImageView) view.findViewById(R.id.carColor);
+        price = (TextView) view.findViewById(R.id.carPrice);
+        description = (TextView) view.findViewById(R.id.carDescription);
 
         SQLiteHelper db = new SQLiteHelper(getActivity().getApplicationContext());
         Car car = db.getCar(bundle_id);
 
         model.setText(car.getModel());
-        //color.setBackgroundColor(000000);
+        color.setBackgroundColor(0xFF000000);
         price.setText(car.getPrice());
         description.setText(car.getDescription());
 

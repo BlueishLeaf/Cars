@@ -13,6 +13,12 @@ import com.example.killian.cars.Constants.DBConstants;
  */
 
 public class InitiateCars {
+
+    /**
+     * Seed Car table
+     *
+     * @param db
+     */
     public static void initCars(SQLiteDatabase db) {
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CARS + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_MODEL + ", "
@@ -111,6 +117,11 @@ public class InitiateCars {
                 "Nulla eu augue tempus, luctus arcu a, blandit arcu. Cras orci mauris, faucibus et odio id, mattis hendrerit nisi. Suspendisse potenti. Donec eros quam, luctus sed semper luctus, vulputate consectetur eros. Nam pharetra tincidunt pellentesque. Nunc ac metus dapibus, sagittis nulla porta, imperdiet leo. Integer maximus quis ligula id maximus. Mauris id leo consequat orci ornare tincidunt nec at est. Quisque sit amet tellus commodo, aliquet nunc vitae, varius lacus. Quisque dolor ante, tempus sed elit a, ullamcorper ornare nunc.', 'http://needsmorejpeg.com/i/ejsy.jpeg')");
     }
 
+    /**
+     * Seed CarImage table
+     *
+     * @param db
+     */
     public static void initCarImages(SQLiteDatabase db) {
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CAR_IMAGES + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_CAR_ID + ","
@@ -231,9 +242,13 @@ public class InitiateCars {
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_CAR_IMAGE_URL + ") "
                 + "values(24,'8', 'https://s32.postimg.org/j1j6mhlxh/toyota_yaris_red_5_1.jpg')");
-
     }
 
+    /**
+     * Seed CarFeedBack table
+     *
+     * @param db
+     */
     public static void initCarFeedback(SQLiteDatabase db) {
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","

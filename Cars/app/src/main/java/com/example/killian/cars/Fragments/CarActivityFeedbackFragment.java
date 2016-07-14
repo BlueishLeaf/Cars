@@ -7,13 +7,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.example.killian.cars.Adapters.CarActivityFeedbackAdapter;
-import com.example.killian.cars.Adapters.MyAdapter;
 import com.example.killian.cars.Constants.DBConstants;
-import com.example.killian.cars.Models.Car;
 import com.example.killian.cars.Models.FeedbackItem;
 import com.example.killian.cars.R;
 import com.example.killian.cars.db.SQLiteHelper;
@@ -29,6 +25,7 @@ import java.util.List;
  */
 
 public class CarActivityFeedbackFragment extends Fragment {
+
     private int bundle_id;
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;

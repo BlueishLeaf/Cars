@@ -6,7 +6,6 @@ package com.example.killian.cars.Constants;
  * @author Killian.
  * @since 11/07/2016.
  */
-
 public class DBConstants {
 
     //Database table names and version
@@ -36,5 +35,4 @@ public class DBConstants {
     public static final String BUNDLE_CAR_ID = "bundle_car_id";
 
     public static final int SPLASH_DISPLAY_LENGTH = 1000;
-
 }

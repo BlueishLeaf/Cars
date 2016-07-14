@@ -2,8 +2,6 @@ package com.example.killian.cars.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -16,23 +14,20 @@ import com.example.killian.cars.Activities.CarActivity;
 import com.example.killian.cars.Constants.DBConstants;
 import com.example.killian.cars.Models.CarItem;
 import com.example.killian.cars.R;
-import com.example.killian.cars.Utils.UIUtils;
 import com.squareup.picasso.Picasso;
-import com.squareup.picasso.Target;
 
 import java.util.List;
 
 /**
- * The class (@code MyAdapter) binds data from the database to the car item list
+ * The class (@code CarItemActivityItemAdapter) binds data from the database to the car item list
  *
  * @author Killian.
  * @since 06/07/2016.
  */
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+public class CarItemActivityItemAdapter extends RecyclerView.Adapter<CarItemActivityItemAdapter.MyViewHolder> {
 
     private List<CarItem> carItemList;
-    private Context context;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView carTitleTextView;
@@ -55,9 +50,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         }
     }
 
-    public MyAdapter(List<CarItem> carItemList, Context context) {
+    public CarItemActivityItemAdapter(List<CarItem> carItemList) {
         this.carItemList = carItemList;
-        this.context = context;
     }
 
     @Override
@@ -73,8 +67,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         CarItem carItem = carItemList.get(position);
         holder.carTitleTextView.setText(carItem.getModel());
         holder.itemView.setId(carItem.getId());
-        // set image tag as color int(maybe)>>>
-        Picasso.with(context).load(carItem.getUrl()).fit().into(holder.carImageView);
+        Picasso.with(holder.itemView.getContext()).load(carItem.getUrl()).fit().into(holder.carImageView);
     }
 
     @Override

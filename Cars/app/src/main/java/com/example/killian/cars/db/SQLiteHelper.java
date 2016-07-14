@@ -13,33 +13,29 @@ import com.example.killian.cars.Models.FeedbackItem;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
  * The class (@code SQLiteHelper) sets up our SQLite database
  *
  * @author Killian.
  * @since 11/07/2016.
  */
-
 public class SQLiteHelper extends SQLiteOpenHelper {
-
 
     public SQLiteHelper(Context context) {
         super(context, DBConstants.DATABASE_NAME, null, DBConstants.DATA_BASE_VERSION);
-
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createCarsTable = "CREATE TABLE "+ DBConstants.DATABASE_TABLE_CARS +" (id INTEGER PRIMARY KEY AUTOINCREMENT, model TEXT, color TEXT, price TEXT, description TEXT, image_url TEXT)";
+        String createCarsTable = "CREATE TABLE " + DBConstants.DATABASE_TABLE_CARS + " (id INTEGER PRIMARY KEY AUTOINCREMENT, model TEXT, color TEXT, price TEXT, description TEXT, image_url TEXT)";
         db.execSQL(createCarsTable);
         InitiateCars.initCars(db);
 
-        String createCarImageTable = "CREATE TABLE "+ DBConstants.DATABASE_TABLE_CAR_IMAGES +"(id INTEGER PRIMARY KEY AUTOINCREMENT, car_id INTEGER, car_image_url TEXT)";
+        String createCarImageTable = "CREATE TABLE " + DBConstants.DATABASE_TABLE_CAR_IMAGES + "(id INTEGER PRIMARY KEY AUTOINCREMENT, car_id INTEGER, car_image_url TEXT)";
         db.execSQL(createCarImageTable);
         InitiateCars.initCarImages(db);
 
-        String createCarCommentsTable = "CREATE TABLE "+ DBConstants.DATABASE_TABLE_FEEDBACK + "(id INTEGER PRIMARY KEY AUTOINCREMENT, car_id INTEGER, user_name TEXT, user_avatar_url TEXT, user_feedback TEXT)";
+        String createCarCommentsTable = "CREATE TABLE " + DBConstants.DATABASE_TABLE_FEEDBACK + "(id INTEGER PRIMARY KEY AUTOINCREMENT, car_id INTEGER, user_name TEXT, user_avatar_url TEXT, user_feedback TEXT)";
         db.execSQL(createCarCommentsTable);
         InitiateCars.initCarFeedback(db);
 
@@ -47,7 +43,6 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
     }
 
     /**
@@ -55,15 +50,12 @@ public class SQLiteHelper extends SQLiteOpenHelper {
      *
      * @return List<CarItem>
      */
-
     public List<CarItem> getAllCars() {
 
         SQLiteDatabase db = this.getWritableDatabase();
-
         List<CarItem> cars = new ArrayList<>();
 
         Cursor cursor = db.rawQuery("SELECT * FROM " + DBConstants.DATABASE_TABLE_CARS + "", null);
-
         CarItem car;
 
         if (cursor.moveToFirst()) {
@@ -80,17 +72,14 @@ public class SQLiteHelper extends SQLiteOpenHelper {
      * Get a list of car image URLs for a specific car
      *
      * @param id car id
-     * @return List<String> cars
+     * @return List<String> carsImageUrls
      */
-
-    public List<String> getCarImageResourceIds(int id) {
+    public List<String> getCarImageUrls(int id) {
 
         SQLiteDatabase db = this.getReadableDatabase();
-
         List<String> cars = new ArrayList<>();
 
         Cursor cursor = db.rawQuery("SELECT car_image_url from " + DBConstants.DATABASE_TABLE_CAR_IMAGES + " WHERE car_id = " + id, null);
-
         if (cursor != null) {
             if (cursor.moveToFirst()) {
                 do {
@@ -105,21 +94,19 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     /**
      * Return a specific car
      *
-     * @param id watch id
+     * @param id car id
      * @return Car
      */
     public Car getCar(int id) {
 
         SQLiteDatabase db = this.getReadableDatabase();
-
         Cursor cursor = db.rawQuery("SELECT * from " + DBConstants.DATABASE_TABLE_CARS + " WHERE id = " + id, null);
 
         Car car = null;
-
         if (cursor != null) {
             if (cursor.moveToFirst()) {
                 do {
-                    car = new Car(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), getCarImageResourceIds(id));
+                    car = new Car(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), getCarImageUrls(id));
                 } while (cursor.moveToNext());
             }
             cursor.close();
@@ -128,16 +115,20 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         return car;
     }
 
+    /**
+     * Return feedback comments for a specific car
+     *
+     * @param carId
+     * @return List<FeedbackItem>
+     */
     public List<FeedbackItem> getCarFeedback(final int carId) {
 
         SQLiteDatabase db = this.getWritableDatabase();
-
         List<FeedbackItem> feedbackItems = new ArrayList<>();
 
-        Cursor cursor = db.rawQuery("SELECT * FROM " + DBConstants.DATABASE_TABLE_FEEDBACK + " WHERE car_id = "+ carId, null);
+        Cursor cursor = db.rawQuery("SELECT * FROM " + DBConstants.DATABASE_TABLE_FEEDBACK + " WHERE car_id = " + carId, null);
 
         FeedbackItem feedback;
-
         if (cursor.moveToFirst()) {
             do {
                 feedback = new FeedbackItem(cursor.getInt(0), cursor.getString(2), cursor.getString(3), cursor.getString(4));

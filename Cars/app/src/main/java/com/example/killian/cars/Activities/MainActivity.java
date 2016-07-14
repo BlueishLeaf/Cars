@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.example.killian.cars.Adapters.MyAdapter;
+import com.example.killian.cars.Adapters.CarItemActivityItemAdapter;
 import com.example.killian.cars.Models.CarItem;
 import com.example.killian.cars.R;
 import com.example.killian.cars.db.SQLiteHelper;
@@ -41,9 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new MyAdapter(carItemList,this);
+        mAdapter = new CarItemActivityItemAdapter(carItemList);
         mRecyclerView.setAdapter(mAdapter);
-
     }
-
 }
