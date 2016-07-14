@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.example.killian.cars.Constants.DBConstants;
 import com.example.killian.cars.Models.Car;
 import com.example.killian.cars.Models.CarItem;
+import com.example.killian.cars.Models.FeedbackItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,8 +39,9 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         db.execSQL(createCarImageTable);
         InitiateCars.initCarImages(db);
 
-        /*String createCarCommentsTable = "CREATE TABLE Car_comments (id INTEGER PRIMARY KEY AUTOINCREMENT, CarId INTEGER, comment TEXT, profileImageId TEXT)";
-        db.execSQL(createCarCommentsTable);*/
+        String createCarCommentsTable = "CREATE TABLE "+ DBConstants.DATABASE_TABLE_FEEDBACK + "(id INTEGER PRIMARY KEY AUTOINCREMENT, car_id INTEGER, user_name TEXT, user_avatar_url TEXT, user_feedback TEXT)";
+        db.execSQL(createCarCommentsTable);
+        InitiateCars.initCarImages(db);
 
     }
 
@@ -101,10 +103,10 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     }
 
     /**
-     * Return a specific watch
+     * Return a specific car
      *
      * @param id watch id
-     * @return Car a Watch
+     * @return Car
      */
     public Car getCar(int id) {
 
@@ -124,6 +126,26 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         }
 
         return car;
+    }
+
+    public List<FeedbackItem> getAllFeedback(final int carId) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        List<FeedbackItem> feedbackItems = new ArrayList<>();
+
+        Cursor cursor = db.rawQuery("SELECT * FROM " + DBConstants.DATABASE_TABLE_FEEDBACK + " WHERE car_id = "+ carId, null);
+
+        FeedbackItem feedback;
+
+        if (cursor.moveToFirst()) {
+            do {
+                feedback = new FeedbackItem(cursor.getInt(0), cursor.getString(2), cursor.getString(3), cursor.getString(4));
+                feedbackItems.add(feedback);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        return feedbackItems;
     }
 }
 
