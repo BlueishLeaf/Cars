@@ -8,6 +8,8 @@ A catalog of cars
 * ~~Database~~
 * ~~Card View UI~~
 * ~~Car Item Styling~~
-* Car service
-* Car page
+* ~~Car service~~
+* ~~Car page~~
+* ~~Populate feedback database~~
+* Shared element activity transition
 * Testing
