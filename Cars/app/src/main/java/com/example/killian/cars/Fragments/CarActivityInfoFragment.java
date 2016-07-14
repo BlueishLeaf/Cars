@@ -45,7 +45,7 @@ public class CarActivityInfoFragment extends Fragment {
         Car car = db.getCar(bundle_id);
 
         model.setText(car.getModel());
-        color.setBackgroundColor(000000);
+        //color.setBackgroundColor(000000);
         price.setText(car.getPrice());
         description.setText(car.getDescription());
 
