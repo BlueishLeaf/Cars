@@ -62,7 +62,6 @@ public class CarActivity extends AppCompatActivity {
         initPagerAdapter();
         initCarFragmentTabs();
 
-        new Task().execute();
     }
 
     private void initPagerAdapter() {
@@ -86,23 +85,4 @@ public class CarActivity extends AppCompatActivity {
         bundle_car_id = bundle.getInt(DBConstants.BUNDLE_CAR_ID);
     }
 
-    class Task extends AsyncTask<String, Integer, Boolean> {
-        @Override
-        protected void onPreExecute() {
-            tabLayout.setVisibility(View.GONE);
-            super.onPreExecute();
-        }
-
-        @Override
-        protected void onPostExecute(Boolean result) {
-            tabLayout.setVisibility(View.GONE);
-            super.onPostExecute(result);
-        }
-
-        @Override
-        protected Boolean doInBackground(String... params) {
-            // get data
-            return null;
-        }
-    }
 }
