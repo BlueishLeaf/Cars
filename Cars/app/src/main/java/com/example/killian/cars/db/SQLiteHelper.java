@@ -41,7 +41,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
         String createCarCommentsTable = "CREATE TABLE "+ DBConstants.DATABASE_TABLE_FEEDBACK + "(id INTEGER PRIMARY KEY AUTOINCREMENT, car_id INTEGER, user_name TEXT, user_avatar_url TEXT, user_feedback TEXT)";
         db.execSQL(createCarCommentsTable);
-        InitiateCars.initCarImages(db);
+        InitiateCars.initCarFeedback(db);
 
     }
 

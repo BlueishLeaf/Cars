@@ -2,12 +2,16 @@ package com.example.killian.cars.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.killian.cars.Adapters.CarActivityFeedbackAdapter;
+import com.example.killian.cars.Adapters.MyAdapter;
 import com.example.killian.cars.Constants.DBConstants;
 import com.example.killian.cars.Models.Car;
 import com.example.killian.cars.Models.FeedbackItem;
@@ -26,24 +30,22 @@ import java.util.List;
 
 public class CarActivityFeedbackFragment extends Fragment {
     private int bundle_id;
-    private TextView username;
-    private TextView feedback;
-    private ImageView avatar;
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_car_feedback, container, false);
         initBundleVariables(getActivity().getIntent().getExtras());
 
-        username=(TextView) view.findViewById(R.id.user_name);
-        avatar=(ImageView) view.findViewById(R.id.user_avatar_url);
-        feedback=(TextView) view.findViewById(R.id.user_feedback);
-
         SQLiteHelper db = new SQLiteHelper(getActivity().getApplicationContext());
         List<FeedbackItem> feedbackItems = db.getAllFeedback(bundle_id);
-
-        username.setText(feedbackItems.get(0).getUsername());
-        feedback.setText(feedbackItems.get(0).getFeedback());
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.feedback_recycler_view);
+        mLayoutManager = new LinearLayoutManager(getContext());
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        mAdapter = new CarActivityFeedbackAdapter(feedbackItems);
+        mRecyclerView.setAdapter(mAdapter);
 
         return view;
     }

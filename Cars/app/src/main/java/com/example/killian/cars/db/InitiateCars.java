@@ -233,5 +233,11 @@ public class InitiateCars {
                 + "values(24,'8', 'https://s32.postimg.org/j1j6mhlxh/toyota_yaris_red_5_1.jpg')");
 
     }
-
+    public static void initCarFeedback(SQLiteDatabase db) {
+        db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
+                + DBConstants.KEY_USER_NAME + ","
+                + DBConstants.KEY_USER_AVATAR_URL + ", "
+                + DBConstants.KEY_USER_FEEDBACK + ") "
+                + "values(1,'SatanRocksMySocks', 'https://goo.gl/4C5eeA', 'Car was vandalised by Satanists, is this where i can get my refund please????')");
+    }
 }

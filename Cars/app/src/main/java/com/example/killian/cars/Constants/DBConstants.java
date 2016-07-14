@@ -24,6 +24,7 @@ public class DBConstants {
     public static final String KEY_DESCRIPTION = "description";
     public static final String KEY_CAR_ID = "car_id";
     public static final String KEY_IMAGE_URL = "image_url";
+    public static final String KEY_CAR_IMAGE_URL = "car_image_url";
     public static final String KEY_USER_NAME = "user_name";
     public static final String KEY_USER_AVATAR_URL = "user_avatar_url";
     public static final String KEY_USER_FEEDBACK = "user_feedback";
