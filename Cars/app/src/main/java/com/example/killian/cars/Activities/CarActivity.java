@@ -1,12 +1,17 @@
 package com.example.killian.cars.activities;
 
 import android.graphics.Bitmap;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.ImageView;
 
 import com.example.killian.cars.adapters.CarActivityFragmentAdapter;
 import com.example.killian.cars.adapters.CarActivityPagerAdapter;
@@ -35,6 +40,8 @@ public class CarActivity extends AppCompatActivity {
 
     private int bundle_car_id;
     private int detailColor;
+    public static int secondaryColor;
+    //private int primaryColor;
     private Car car;
     private String bundle_car_ulr;
 
@@ -64,6 +71,9 @@ public class CarActivity extends AppCompatActivity {
                     public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
                         // setup views
                         detailColor = UIUtils.getDetailColorFromImage(bitmap);
+                        secondaryColor = UIUtils.getSecondaryColorFromImage(bitmap);
+                        //primaryColor = UIUtils.getPrimaryColorFromImage();
+                        initToolbar(car.getModel());
                         initPagerAdapter();
                         initCarFragmentTabs();
                         setCollapsingToolbarTheme();
@@ -96,6 +106,14 @@ public class CarActivity extends AppCompatActivity {
         tabLayout.setOnTabSelectedListener(new TabLayoutListener(tabViewPager));
     }
 
+    private void initToolbar(String title) {
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("test");
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(detailColor));
+        }}
+
     private void setCollapsingToolbarTheme(){
         collapsingToolbarLayout.setBackgroundColor(detailColor);
     }
@@ -103,5 +121,20 @@ public class CarActivity extends AppCompatActivity {
     private void initBundleVariables(Bundle bundle) {
         bundle_car_id = bundle.getInt(DBConstants.BUNDLE_CAR_ID);
         bundle_car_ulr = bundle.getString("car_url");
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 }
