@@ -1,7 +1,6 @@
-package com.example.killian.cars.Adapters;
+package com.example.killian.cars.adapters;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;

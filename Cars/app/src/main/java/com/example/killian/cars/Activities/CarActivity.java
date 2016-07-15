@@ -1,6 +1,5 @@
-package com.example.killian.cars.Activities;
+package com.example.killian.cars.activities;
 
-import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -9,13 +8,13 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.killian.cars.Adapters.CarActivityFragmentAdapter;
-import com.example.killian.cars.Adapters.CarActivityPagerAdapter;
-import com.example.killian.cars.Constants.DBConstants;
-import com.example.killian.cars.Listeners.TabLayoutListener;
-import com.example.killian.cars.Models.Car;
+import com.example.killian.cars.adapters.CarActivityFragmentAdapter;
+import com.example.killian.cars.adapters.CarActivityPagerAdapter;
+import com.example.killian.cars.constants.DBConstants;
+import com.example.killian.cars.listeners.TabLayoutListener;
+import com.example.killian.cars.models.Car;
 import com.example.killian.cars.R;
-import com.example.killian.cars.Utils.UIUtils;
+import com.example.killian.cars.utils.UIUtils;
 import com.example.killian.cars.db.SQLiteHelper;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;

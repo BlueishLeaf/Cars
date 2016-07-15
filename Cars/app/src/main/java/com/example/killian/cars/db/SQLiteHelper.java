@@ -5,10 +5,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.killian.cars.Constants.DBConstants;
-import com.example.killian.cars.Models.Car;
-import com.example.killian.cars.Models.CarItem;
-import com.example.killian.cars.Models.FeedbackItem;
+import com.example.killian.cars.constants.DBConstants;
+import com.example.killian.cars.models.Car;
+import com.example.killian.cars.models.CarItem;
+import com.example.killian.cars.models.FeedbackItem;
 
 import java.util.ArrayList;
 import java.util.List;

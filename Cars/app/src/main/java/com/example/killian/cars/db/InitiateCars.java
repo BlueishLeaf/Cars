@@ -2,7 +2,7 @@ package com.example.killian.cars.db;
 
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.killian.cars.Constants.DBConstants;
+import com.example.killian.cars.constants.DBConstants;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.example.killian.cars.Adapters;
+package com.example.killian.cars.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.killian.cars.Models.FeedbackItem;
+import com.example.killian.cars.models.FeedbackItem;
 import com.example.killian.cars.R;
 import com.squareup.picasso.Picasso;
 

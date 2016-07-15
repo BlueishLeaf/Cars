@@ -1,4 +1,4 @@
-package com.example.killian.cars.Fragments;
+package com.example.killian.cars.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,9 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.killian.cars.Adapters.CarActivityFeedbackAdapter;
-import com.example.killian.cars.Constants.DBConstants;
-import com.example.killian.cars.Models.FeedbackItem;
+import com.example.killian.cars.adapters.CarActivityFeedbackAdapter;
+import com.example.killian.cars.constants.DBConstants;
+import com.example.killian.cars.models.FeedbackItem;
 import com.example.killian.cars.R;
 import com.example.killian.cars.db.SQLiteHelper;
 

@@ -1,4 +1,4 @@
-package com.example.killian.cars.Fragments;
+package com.example.killian.cars.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,10 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.killian.cars.Constants.DBConstants;
-import com.example.killian.cars.Models.Car;
+import com.example.killian.cars.constants.DBConstants;
+import com.example.killian.cars.models.Car;
 import com.example.killian.cars.R;
-import com.example.killian.cars.Utils.AnimationUtils;
+import com.example.killian.cars.utils.AnimationUtils;
 import com.example.killian.cars.db.SQLiteHelper;
 
 /**

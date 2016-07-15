@@ -1,4 +1,4 @@
-package com.example.killian.cars.Models;
+package com.example.killian.cars.models;
 
 import java.util.List;
 

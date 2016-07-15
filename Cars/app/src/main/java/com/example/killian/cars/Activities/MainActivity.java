@@ -1,12 +1,12 @@
-package com.example.killian.cars.Activities;
+package com.example.killian.cars.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.example.killian.cars.Adapters.CarItemActivityItemAdapter;
-import com.example.killian.cars.Models.CarItem;
+import com.example.killian.cars.adapters.CarItemActivityAdapter;
+import com.example.killian.cars.models.CarItem;
 import com.example.killian.cars.R;
 import com.example.killian.cars.db.SQLiteHelper;
 
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new CarItemActivityItemAdapter(carItemList);
+        mAdapter = new CarItemActivityAdapter(carItemList);
         mRecyclerView.setAdapter(mAdapter);
     }
 }

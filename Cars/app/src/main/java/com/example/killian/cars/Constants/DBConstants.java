@@ -1,4 +1,4 @@
-package com.example.killian.cars.Constants;
+package com.example.killian.cars.constants;
 
 /**
  * The class (@code DBConstants) shows all the constants used in this project

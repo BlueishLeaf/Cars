@@ -1,6 +1,5 @@
-package com.example.killian.cars.Adapters;
+package com.example.killian.cars.adapters;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -10,22 +9,22 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.killian.cars.Activities.CarActivity;
-import com.example.killian.cars.Constants.DBConstants;
-import com.example.killian.cars.Models.CarItem;
+import com.example.killian.cars.activities.CarActivity;
+import com.example.killian.cars.constants.DBConstants;
+import com.example.killian.cars.models.CarItem;
 import com.example.killian.cars.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 /**
- * The class (@code CarItemActivityItemAdapter) binds data from the database to the car item list
+ * The class (@code CarItemActivityAdapter) binds data from the database to the car item list
  *
  * @author Killian.
  * @since 06/07/2016.
  */
 
-public class CarItemActivityItemAdapter extends RecyclerView.Adapter<CarItemActivityItemAdapter.MyViewHolder> {
+public class CarItemActivityAdapter extends RecyclerView.Adapter<CarItemActivityAdapter.MyViewHolder> {
 
     private List<CarItem> carItemList;
 
@@ -43,6 +42,7 @@ public class CarItemActivityItemAdapter extends RecyclerView.Adapter<CarItemActi
                     Intent intent = new Intent(itemView.getContext(), CarActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt(DBConstants.BUNDLE_CAR_ID, itemView.getId());
+                    bundle.putString("car_url", itemView.getTag(R.id.image_url_tag).toString());
                     intent.putExtras(bundle);
                     itemView.getContext().startActivity(intent);
                 }
@@ -50,7 +50,7 @@ public class CarItemActivityItemAdapter extends RecyclerView.Adapter<CarItemActi
         }
     }
 
-    public CarItemActivityItemAdapter(List<CarItem> carItemList) {
+    public CarItemActivityAdapter(List<CarItem> carItemList) {
         this.carItemList = carItemList;
     }
 
@@ -67,6 +67,7 @@ public class CarItemActivityItemAdapter extends RecyclerView.Adapter<CarItemActi
         CarItem carItem = carItemList.get(position);
         holder.carTitleTextView.setText(carItem.getModel());
         holder.itemView.setId(carItem.getId());
+        holder.itemView.setTag(R.id.image_url_tag, carItem.getUrl());
         Picasso.with(holder.itemView.getContext()).load(carItem.getUrl()).fit().into(holder.carImageView);
     }
 

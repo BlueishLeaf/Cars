@@ -1,11 +1,11 @@
-package com.example.killian.cars.Adapters;
+package com.example.killian.cars.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.example.killian.cars.Fragments.CarActivityFeedbackFragment;
-import com.example.killian.cars.Fragments.CarActivityInfoFragment;
+import com.example.killian.cars.fragments.CarActivityFeedbackFragment;
+import com.example.killian.cars.fragments.CarActivityInfoFragment;
 
 /**
  * The class (@code CarActivityFragmentAdapter) binds the car's data from

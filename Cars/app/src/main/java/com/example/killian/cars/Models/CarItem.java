@@ -1,4 +1,4 @@
-package com.example.killian.cars.Models;
+package com.example.killian.cars.models;
 
 /**
  * This class (@code CarItem) governs the framework for the cards of cars in the catalog

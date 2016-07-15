@@ -1,4 +1,4 @@
-package com.example.killian.cars.Utils;
+package com.example.killian.cars.utils;
 
 import android.content.Context;
 import android.view.animation.Animation;
