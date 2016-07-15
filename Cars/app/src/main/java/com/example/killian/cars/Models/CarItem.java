@@ -6,29 +6,27 @@ package com.example.killian.cars.models;
  * @author Killian.
  * @since 11/07/2016.
  */
-
 public class CarItem {
 
     private int id;
     private String model;
     private String url;
 
-    public CarItem(final int id, final String model, final String url){
-
+    public CarItem(final int id, final String model, final String url) {
         this.id = id;
         this.model = model;
         this.url = url;
     }
 
-    public int getId(){
+    public int getId() {
         return id;
     }
 
-    public String getModel(){
+    public String getModel() {
         return model;
     }
 
-    public String getUrl(){
+    public String getUrl() {
         return url;
     }
 

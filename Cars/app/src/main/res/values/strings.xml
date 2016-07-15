@@ -5,4 +5,12 @@
     <string name="car">Car</string>
     <string name="cardesc">CarDesc</string>
     <string name="carname">CarName</string>
+    <string name="user_image">user image</string>
+    <string name="feedbackkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk">Feedbackkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</string>
+    <string name="car_pager_image_desc">a car image</string>
+    <string name="car_item_image_desc">car item image</string>
+    <string name="model">Model</string>
+    <string name="recent_feedback">Recent Feedback</string>
+    <string name="description">description</string>
+    <string name="car_price">price</string>
 </resources>

@@ -3,7 +3,12 @@ package com.example.killian.cars.db;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.provider.SyncStateContract;
+import android.support.design.widget.Snackbar;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.example.killian.cars.constants.DBConstants;
 import com.example.killian.cars.models.Car;
@@ -27,6 +32,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+
         String createCarsTable = "CREATE TABLE " + DBConstants.DATABASE_TABLE_CARS + " (id INTEGER PRIMARY KEY AUTOINCREMENT, model TEXT, color INTEGER, price TEXT, description TEXT, image_url TEXT)";
         db.execSQL(createCarsTable);
         InitiateCars.initCars(db);
@@ -38,7 +44,6 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         String createCarCommentsTable = "CREATE TABLE " + DBConstants.DATABASE_TABLE_FEEDBACK + "(id INTEGER PRIMARY KEY AUTOINCREMENT, car_id INTEGER, user_name TEXT, user_avatar_url TEXT, user_feedback TEXT)";
         db.execSQL(createCarCommentsTable);
         InitiateCars.initCarFeedback(db);
-
     }
 
     @Override
@@ -118,7 +123,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     /**
      * Return feedback comments for a specific car
      *
-     * @param carId
+     * @param carId car to feedback for
      * @return List<FeedbackItem>
      */
     public List<FeedbackItem> getCarFeedback(final int carId) {
@@ -137,6 +142,25 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         }
         cursor.close();
         return feedbackItems;
+    }
+
+    /**
+     * Insert a users feedback for a specific car
+     *
+     * @param carId         cardId user commented on
+     * @param userId        user who commented
+     * @param userAvatarUrl user pic url
+     * @param feedback      the comment
+     * @throws SQLiteException
+     */
+    public void insertFeedBack(final int carId, final int userId, final String userAvatarUrl, final String feedback) throws SQLiteException {
+        SQLiteDatabase db = this.getWritableDatabase();
+        try {
+            String sql = "INSERT INTO " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_CAR_ID + ", " + DBConstants.KEY_USER_NAME + ", " + DBConstants.KEY_USER_AVATAR_URL + ", " + DBConstants.KEY_USER_FEEDBACK + ") VALUES (" + carId + ", " + userId + ", " + userAvatarUrl + ", " + feedback + ")";
+            db.execSQL(sql);
+        } catch (Exception e) {
+            Log.i(e.toString(), "Could not insert into db");
+        }
     }
 }
 

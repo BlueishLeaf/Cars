@@ -10,40 +10,36 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:text="model"
         android:textColor="#000000"
-        android:textSize="24sp"
-        android:text="model" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/carPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:text="price"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/carModel"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:padding="10dp"
+        android:text="@string/car_price"
+        android:textSize="20sp" />
 
     <ImageView
+        android:id="@+id/carColor"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:id="@+id/carColor"
         android:layout_alignBottom="@+id/carModel"
-        android:layout_toRightOf="@+id/carModel"
         android:layout_toEndOf="@+id/carModel" />
 
     <TextView
         android:id="@+id/carDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="16sp"
-        android:text="description"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/carPrice"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
+        android:padding="10dp"
+        android:text="@string/description"
+        android:textSize="16sp" />
 
 
 </RelativeLayout>

@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -16,16 +15,15 @@ import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
-import android.widget.ImageView;
 
+import com.example.killian.cars.R;
 import com.example.killian.cars.adapters.CarActivityFragmentAdapter;
 import com.example.killian.cars.adapters.CarActivityPagerAdapter;
 import com.example.killian.cars.constants.DBConstants;
+import com.example.killian.cars.db.SQLiteHelper;
 import com.example.killian.cars.listeners.TabLayoutListener;
 import com.example.killian.cars.models.Car;
-import com.example.killian.cars.R;
 import com.example.killian.cars.utils.UIUtils;
-import com.example.killian.cars.db.SQLiteHelper;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
@@ -54,7 +52,6 @@ public class CarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_car);
-        //ButterKnife.bind(this);// Must use this line to initialize the @BindViews class variables :P
 
         // bind variables
         viewPager = (ViewPager) findViewById(R.id.carImagePager);
@@ -113,19 +110,19 @@ public class CarActivity extends AppCompatActivity {
 
     private void initToolbar(String title) {
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle(title);
-            SpannableString s = new SpannableString(title);
-            s.setSpan(new ForegroundColorSpan(detailColor), 0, title.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-            getSupportActionBar().setTitle(s);
+            SpannableString spannableString = new SpannableString(title);
+            spannableString.setSpan(new ForegroundColorSpan(detailColor), 0, title.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            getSupportActionBar().setTitle(spannableString);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
 
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION, WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
             getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        }}
+        }
+    }
 
-    private void setCollapsingToolbarTheme(){
-        collapsingToolbarLayout.setBackgroundColor(Color.TRANSPARENT);
+    private void setCollapsingToolbarTheme() {
+        collapsingToolbarLayout.animate();
     }
 
     private void initBundleVariables(Bundle bundle) {
@@ -140,7 +137,6 @@ public class CarActivity extends AppCompatActivity {
                 finish();
                 return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 

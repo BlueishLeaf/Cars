@@ -1,19 +1,15 @@
 package com.example.killian.cars.activities;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
 
-import com.example.killian.cars.adapters.CarItemActivityAdapter;
-import com.example.killian.cars.models.CarItem;
 import com.example.killian.cars.R;
+import com.example.killian.cars.adapters.CarItemActivityAdapter;
 import com.example.killian.cars.db.SQLiteHelper;
+import com.example.killian.cars.models.CarItem;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -25,11 +21,6 @@ import java.util.List;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private List<CarItem> carItemList = new ArrayList<>();
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -39,14 +30,12 @@ public class MainActivity extends AppCompatActivity {
         SQLiteHelper db = new SQLiteHelper(this);
         db.getAllCars();
 
-        carItemList = db.getAllCars();
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        List<CarItem> carItemList = db.getAllCars();
+        RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        mLayoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new CarItemActivityAdapter(carItemList);
+        RecyclerView.Adapter mAdapter = new CarItemActivityAdapter(carItemList);
         mRecyclerView.setAdapter(mAdapter);
     }
-
-
 }

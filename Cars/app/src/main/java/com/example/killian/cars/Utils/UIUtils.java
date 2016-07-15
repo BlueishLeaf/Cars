@@ -1,8 +1,6 @@
 package com.example.killian.cars.utils;
 
-import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 
 import org.michaelevans.colorart.library.ColorArt;
 
@@ -15,8 +13,7 @@ public class UIUtils {
     /**
      * Get primary color from an image
      *
-     * @param context    context
-     * @param resourceId image id to get color from
+     * @param bitmap image to get color from
      * @return integer value of primary color from an image
      */
     public static int getPrimaryColorFromImage(Bitmap bitmap) {
@@ -27,8 +24,7 @@ public class UIUtils {
     /**
      * Get secondary color from an image
      *
-     * @param context    context
-     * @param resourceId image id to get color from
+     * @param bitmap image to get color from
      * @return integer value of secondary color from an image
      */
     public static int getSecondaryColorFromImage(Bitmap bitmap) {
@@ -39,8 +35,7 @@ public class UIUtils {
     /**
      * Get detail color from an image
      *
-     * @param context    context
-     * @param resourceId image id to get color from
+     * @param bitmap image to get color from
      * @return integer value of detail color from an image
      */
     public static int getDetailColorFromImage(Bitmap bitmap) {

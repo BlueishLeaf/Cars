@@ -27,21 +27,20 @@ import java.util.List;
 public class CarActivityFeedbackFragment extends Fragment {
 
     private int bundle_id;
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.fragment_car_feedback, container, false);
         initBundleVariables(getActivity().getIntent().getExtras());
 
         SQLiteHelper db = new SQLiteHelper(getActivity().getApplicationContext());
         List<FeedbackItem> feedbackItems = db.getCarFeedback(bundle_id);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.feedback_recycler_view);
-        mLayoutManager = new LinearLayoutManager(getContext());
+
+        RecyclerView mRecyclerView = (RecyclerView) view.findViewById(R.id.feedback_recycler_view);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new CarActivityFeedbackAdapter(feedbackItems);
+        RecyclerView.Adapter mAdapter = new CarActivityFeedbackAdapter(feedbackItems);
         mRecyclerView.setAdapter(mAdapter);
 
         return view;

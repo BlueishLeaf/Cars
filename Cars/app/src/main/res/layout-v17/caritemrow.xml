@@ -2,9 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="120dp"
-    android:focusable="true"
-    android:clickable="true"
     android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
     android:orientation="vertical"
     android:padding="4dp">
 
@@ -15,34 +15,32 @@
         android:layout_margin="2dp">
 
         <RelativeLayout
-            android:layout_width = "match_parent"
-            android:layout_height = "wrap_content"
-            android:padding = "10dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
 
             <TextView
-                android:scrollHorizontally="false"
-                android:text="Model"
                 android:id="@+id/car_item_title"
-                android:textSize="20dp"
-                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:scrollHorizontally="false"
+                android:text="@string/model"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/car_item_image"
                 android:layout_width="150dp"
                 android:layout_height="90dp"
-                android:id="@+id/car_item_image"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginRight="16dp"
-                android:scaleType="fitXY"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
                 android:adjustViewBounds="true"
-                android:background="#7d6c6c" />
-
+                android:background="#7d6c6c"
+                android:contentDescription="@string/car_item_image_desc"
+                android:scaleType="fitXY" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 </RelativeLayout>
