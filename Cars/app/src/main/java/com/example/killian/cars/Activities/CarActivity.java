@@ -36,6 +36,7 @@ public class CarActivity extends AppCompatActivity {
     private int bundle_car_id;
     private int detailColor;
     private Car car;
+    private String bundle_car_ulr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +58,7 @@ public class CarActivity extends AppCompatActivity {
         car = db.getCar(bundle_car_id);
 
         Picasso.with(this)
-                .load(car.urls().get(0))
+                .load(bundle_car_ulr)
                 .into(new Target() {
                     @Override
                     public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
@@ -101,5 +102,6 @@ public class CarActivity extends AppCompatActivity {
 
     private void initBundleVariables(Bundle bundle) {
         bundle_car_id = bundle.getInt(DBConstants.BUNDLE_CAR_ID);
+        bundle_car_ulr = bundle.getString("car_url");
     }
 }
