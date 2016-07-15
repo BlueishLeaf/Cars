@@ -19,8 +19,7 @@ public class UIUtils {
      * @param resourceId image id to get color from
      * @return integer value of primary color from an image
      */
-    public static int getPrimaryColorFromImage(Context context, int resourceId) {
-        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), resourceId);
+    public static int getPrimaryColorFromImage(Bitmap bitmap) {
         ColorArt colorArt = new ColorArt(bitmap);
         return colorArt.getPrimaryColor();
     }

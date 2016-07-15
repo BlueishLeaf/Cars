@@ -1,6 +1,7 @@
 package com.example.killian.cars.activities;
 
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -9,8 +10,12 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.example.killian.cars.adapters.CarActivityFragmentAdapter;
@@ -40,8 +45,8 @@ public class CarActivity extends AppCompatActivity {
 
     private int bundle_car_id;
     private int detailColor;
-    public static int secondaryColor;
-    //private int primaryColor;
+    private int secondaryColor;
+    private int primaryColor;
     private Car car;
     private String bundle_car_ulr;
 
@@ -72,7 +77,7 @@ public class CarActivity extends AppCompatActivity {
                         // setup views
                         detailColor = UIUtils.getDetailColorFromImage(bitmap);
                         secondaryColor = UIUtils.getSecondaryColorFromImage(bitmap);
-                        //primaryColor = UIUtils.getPrimaryColorFromImage();
+                        primaryColor = UIUtils.getPrimaryColorFromImage(bitmap);
                         initToolbar(car.getModel());
                         initPagerAdapter();
                         initCarFragmentTabs();
@@ -108,14 +113,18 @@ public class CarActivity extends AppCompatActivity {
 
     private void initToolbar(String title) {
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("test");
+            getSupportActionBar().setTitle(title);
+            SpannableString s = new SpannableString(title);
+            s.setSpan(new ForegroundColorSpan(detailColor), 0, title.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            getSupportActionBar().setTitle(s);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
-            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(detailColor));
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION, WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         }}
 
     private void setCollapsingToolbarTheme(){
-        collapsingToolbarLayout.setBackgroundColor(detailColor);
+        collapsingToolbarLayout.setBackgroundColor(Color.TRANSPARENT);
     }
 
     private void initBundleVariables(Bundle bundle) {

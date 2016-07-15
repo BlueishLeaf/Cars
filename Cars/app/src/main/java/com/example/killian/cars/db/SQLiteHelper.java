@@ -27,7 +27,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createCarsTable = "CREATE TABLE " + DBConstants.DATABASE_TABLE_CARS + " (id INTEGER PRIMARY KEY AUTOINCREMENT, model TEXT, color TEXT, price TEXT, description TEXT, image_url TEXT)";
+        String createCarsTable = "CREATE TABLE " + DBConstants.DATABASE_TABLE_CARS + " (id INTEGER PRIMARY KEY AUTOINCREMENT, model TEXT, color INTEGER, price TEXT, description TEXT, image_url TEXT)";
         db.execSQL(createCarsTable);
         InitiateCars.initCars(db);
 
@@ -106,7 +106,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         if (cursor != null) {
             if (cursor.moveToFirst()) {
                 do {
-                    car = new Car(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), getCarImageUrls(id));
+                    car = new Car(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getInt(2), cursor.getString(3), cursor.getString(4), getCarImageUrls(id));
                 } while (cursor.moveToNext());
             }
             cursor.close();

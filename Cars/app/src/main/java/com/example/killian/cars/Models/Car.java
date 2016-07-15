@@ -16,12 +16,12 @@ public class Car {
 
     private int id;
     private String model;
-    private String color;
+    private int color;
     private String description;
     private String price;
     private List<String> urls;
 
-    public Car(final int id, final String model, final String color,  final String price, final String description, final List<String>urls){
+    public Car(final int id, final String model, final int color,  final String price, final String description, final List<String>urls){
 
         this.id = id;
         this.model = model;
@@ -40,7 +40,7 @@ public class Car {
         return model;
     }
 
-    public String getColor(){
+    public int getColor(){
         return color;
     }
 
