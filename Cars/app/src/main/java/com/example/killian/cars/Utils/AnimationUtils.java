@@ -19,7 +19,7 @@ public class AnimationUtils {
      * @param offset   mls delay animation starting, set to 0 for no offset
      * @return Animation animation with a duration and offset
      */
-    public static Animation get_slide_up(Context context, int duration, int offset) {
+    public static Animation slideUp(Context context, int duration, int offset) {
         Animation slide_up = android.view.animation.AnimationUtils.loadAnimation(context,
                 R.anim.slide_up);
         slide_up.setDuration(duration);
@@ -35,7 +35,7 @@ public class AnimationUtils {
      * @param offset   mls delay animation starting, set to 0 for no offset
      * @return Animation animation with a duration and offset
      */
-    public static Animation get_slide_down(Context context, int duration, int offset) {
+    public static Animation slideDown(Context context, int duration, int offset) {
         Animation slide_down = android.view.animation.AnimationUtils.loadAnimation(context,
                 R.anim.slide_down);
         slide_down.setDuration(duration);
@@ -51,7 +51,7 @@ public class AnimationUtils {
      * @param offset   mls delay animation starting, set to 0 for no offset
      * @return Animation animation with a duration and offset
      */
-    public static Animation get_fade_in(Context context, int duration, int offset) {
+    public static Animation fadeIn(Context context, int duration, int offset) {
         Animation fade_in = android.view.animation.AnimationUtils.loadAnimation(context,
                 R.anim.fade_in);
         fade_in.setDuration(duration);

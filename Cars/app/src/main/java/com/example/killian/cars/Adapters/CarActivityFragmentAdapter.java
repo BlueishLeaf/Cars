@@ -14,7 +14,6 @@ import com.example.killian.cars.fragments.CarActivityInfoFragment;
  * @author Killian.
  * @since 12/07/2016.
  */
-
 public class CarActivityFragmentAdapter extends FragmentStatePagerAdapter {
     int numOfTabs;
 

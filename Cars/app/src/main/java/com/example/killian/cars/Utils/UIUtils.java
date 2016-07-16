@@ -14,9 +14,9 @@ public class UIUtils {
      * Get primary color from an image
      *
      * @param bitmap image to get color from
-     * @return integer value of primary color from an image
+     * @return integer value of primary color from a bitmap image
      */
-    public static int getPrimaryColorFromImage(Bitmap bitmap) {
+    public static int getPrimaryColorFromBitmap(Bitmap bitmap) {
         ColorArt colorArt = new ColorArt(bitmap);
         return colorArt.getPrimaryColor();
     }
@@ -25,9 +25,9 @@ public class UIUtils {
      * Get secondary color from an image
      *
      * @param bitmap image to get color from
-     * @return integer value of secondary color from an image
+     * @return integer value of secondary color from a bitmap image
      */
-    public static int getSecondaryColorFromImage(Bitmap bitmap) {
+    public static int getSecondaryColorFromBitmap(Bitmap bitmap) {
         ColorArt colorArt = new ColorArt(bitmap);
         return colorArt.getSecondaryColor();
     }
@@ -36,9 +36,9 @@ public class UIUtils {
      * Get detail color from an image
      *
      * @param bitmap image to get color from
-     * @return integer value of detail color from an image
+     * @return integer value of detail color from a bitmap image
      */
-    public static int getDetailColorFromImage(Bitmap bitmap) {
+    public static int getDetailColorFromBitmap(Bitmap bitmap) {
         ColorArt colorArt = new ColorArt(bitmap);
         return colorArt.getDetailColor();
     }

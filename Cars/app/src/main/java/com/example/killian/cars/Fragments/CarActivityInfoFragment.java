@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.killian.cars.activities.CarActivity;
 import com.example.killian.cars.constants.DBConstants;
 import com.example.killian.cars.models.Car;
 import com.example.killian.cars.R;
@@ -56,10 +55,10 @@ public class CarActivityInfoFragment extends Fragment {
     }
 
     private void initAnimations() {
-        model.setAnimation(AnimationUtils.get_slide_up(this.getContext(), 900, 0));
-        color.setAnimation(AnimationUtils.get_slide_up(this.getContext(), 900, 0));
-        price.setAnimation(AnimationUtils.get_slide_up(this.getContext(), 1150, 0));
-        description.setAnimation(AnimationUtils.get_slide_up(this.getContext(), 1350, 0));
+        model.setAnimation(AnimationUtils.slideUp(this.getContext(), 900, 0));
+        color.setAnimation(AnimationUtils.slideUp(this.getContext(), 900, 0));
+        price.setAnimation(AnimationUtils.slideUp(this.getContext(), 1150, 0));
+        description.setAnimation(AnimationUtils.slideUp(this.getContext(), 1350, 0));
     }
 
     private void initBundleVariables(Bundle bundle) {

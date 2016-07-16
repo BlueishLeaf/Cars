@@ -2,6 +2,8 @@ package com.example.killian.cars.activities;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -45,6 +47,7 @@ public class CarActivity extends AppCompatActivity {
     private int detailColor;
     private int secondaryColor;
     private int primaryColor;
+
     private Car car;
     private String bundle_car_ulr;
 
@@ -72,9 +75,9 @@ public class CarActivity extends AppCompatActivity {
                     @Override
                     public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
                         // setup views
-                        detailColor = UIUtils.getDetailColorFromImage(bitmap);
-                        secondaryColor = UIUtils.getSecondaryColorFromImage(bitmap);
-                        primaryColor = UIUtils.getPrimaryColorFromImage(bitmap);
+                        detailColor = UIUtils.getDetailColorFromBitmap(bitmap);
+                        secondaryColor = UIUtils.getSecondaryColorFromBitmap(bitmap);
+                        primaryColor = UIUtils.getPrimaryColorFromBitmap(bitmap);
                         initToolbar(car.getModel());
                         initPagerAdapter();
                         initCarFragmentTabs();
@@ -113,12 +116,23 @@ public class CarActivity extends AppCompatActivity {
             SpannableString spannableString = new SpannableString(title);
             spannableString.setSpan(new ForegroundColorSpan(detailColor), 0, title.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
             getSupportActionBar().setTitle(spannableString);
+
+            getSupportActionBar().setHomeAsUpIndicator(getColorBackButton());
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
 
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION, WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
             getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         }
+    }
+
+    private Drawable getColorBackButton() {
+        final Drawable upArrow = getResources().getDrawable(R.drawable.back_arrow, this.getTheme());
+        assert upArrow != null;
+        Bitmap bitmap = ((BitmapDrawable) upArrow).getBitmap();
+        Drawable arrowDrawable = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, 80, 80, true));// TODO remove magic numbers
+        arrowDrawable.setColorFilter(detailColor, PorterDuff.Mode.SRC_ATOP);
+        return arrowDrawable;
     }
 
     private void setCollapsingToolbarTheme() {
