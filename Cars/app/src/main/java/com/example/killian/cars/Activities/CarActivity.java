@@ -130,7 +130,7 @@ public class CarActivity extends AppCompatActivity {
         final Drawable upArrow = getResources().getDrawable(R.drawable.back_arrow, this.getTheme());
         assert upArrow != null;
         Bitmap bitmap = ((BitmapDrawable) upArrow).getBitmap();
-        Drawable arrowDrawable = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, 80, 80, true));// TODO remove magic numbers
+        Drawable arrowDrawable = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, DBConstants.ARROW_HEIGHT, DBConstants.ARROW_WIDTH, true));
         arrowDrawable.setColorFilter(detailColor, PorterDuff.Mode.SRC_ATOP);
         return arrowDrawable;
     }
