@@ -116,6 +116,7 @@ public class CarActivity extends AppCompatActivity {
             SpannableString spannableString = new SpannableString(title);
             spannableString.setSpan(new ForegroundColorSpan(detailColor), 0, title.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
             getSupportActionBar().setTitle(spannableString);
+            getSupportActionBar().setElevation(0);
 
             getSupportActionBar().setHomeAsUpIndicator(getColorBackButton());
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
