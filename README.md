@@ -10,5 +10,7 @@ A catalog of cars
 * ~~Car Item Styling~~
 * ~~Car service~~
 * ~~Car page~~
-* Populate feedback database
+* ~~Populate feedback database~~
+* Page loading spinner
+* Splash screen
 * Shared element activity transition

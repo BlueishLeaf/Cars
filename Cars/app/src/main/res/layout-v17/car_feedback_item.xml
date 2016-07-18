@@ -4,31 +4,35 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/user_avatar"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_margin="20dp"
-        android:contentDescription="@string/user_image" />
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/user_avatar"
-        android:layout_alignStart="@+id/user_feedback"
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:text="Username"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/user_avatar"
+        android:layout_toEndOf="@+id/user_avatar"
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:id="@+id/user_feedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/user_avatar"
-        android:layout_toEndOf="@+id/user_avatar"
         android:text="@string/feedbackkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
-        android:textAlignment="textStart"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:maxLines="5"
+        android:lines="5"
+        android:layout_below="@+id/user_avatar"
+        android:layout_toEndOf="@+id/user_avatar" />
 </RelativeLayout>
