@@ -17,6 +17,8 @@ import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.example.killian.cars.R;
 import com.example.killian.cars.adapters.CarActivityFragmentAdapter;
@@ -47,6 +49,7 @@ public class CarActivity extends AppCompatActivity {
     private int detailColor;
     private int secondaryColor;
     private int primaryColor;
+    private int dotsCount;    //No of tabs or images
 
     private Car car;
     private String bundle_car_ulr;
@@ -55,6 +58,7 @@ public class CarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_car);
+
 
         // bind variables
         viewPager = (ViewPager) findViewById(R.id.carImagePager);
@@ -68,6 +72,22 @@ public class CarActivity extends AppCompatActivity {
         // setup data
         SQLiteHelper db = new SQLiteHelper(getApplicationContext());
         car = db.getCar(bundle_car_id);
+        drawPageSelectionIndicators(0);
+        dotsCount=car.urls().size();    //No of tabs or images
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                drawPageSelectionIndicators(position);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+            }
+        });
 
         Picasso.with(this)
                 .load(bundle_car_ulr)
@@ -157,5 +177,32 @@ public class CarActivity extends AppCompatActivity {
 
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;
+    }
+
+
+    private ImageView[] dots;
+    LinearLayout linearLayout;
+
+    private void drawPageSelectionIndicators(int mPosition){
+        if(linearLayout!=null) {
+            linearLayout.removeAllViews();
+        }
+        linearLayout=(LinearLayout)findViewById(R.id.viewPagerCountDots);
+        dots = new ImageView[dotsCount];
+        for (int i = 0; i < dotsCount; i++) {
+            dots[i] = new ImageView(this);
+            if(i==mPosition)
+                dots[i].setImageDrawable(getResources().getDrawable(R.drawable.item_selected));
+            else
+                dots[i].setImageDrawable(getResources().getDrawable(R.drawable.item_unselected));
+
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+            );
+
+            params.setMargins(4, 0, 4, 0);
+            linearLayout.addView(dots[i], params);
+        }
     }
 }
