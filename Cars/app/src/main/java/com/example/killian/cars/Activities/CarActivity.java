@@ -47,10 +47,7 @@ public class CarActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager tabViewPager;
     private CollapsingToolbarLayout collapsingToolbarLayout;
-    private EditText editTextName;
-    private EditText editTextUrl;
-    private EditText editTextFeedback;
-    private Button addFeedback;
+
 
     private int bundle_car_id;
     private int detailColor;
@@ -72,12 +69,9 @@ public class CarActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabViewPager = (ViewPager) findViewById(R.id.carTabPager);
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-//        editTextName = (EditText) findViewById(R.id.name_text);
-//        editTextUrl = (EditText) findViewById(R.id.url_text);
-//        editTextFeedback = (EditText) findViewById(R.id.feedback_text);
-//
-//        addFeedback = (Button) findViewById(R.id.feedback_button);
-//        addFeedback.setOnClickListener(this);
+
+
+
 
 
         // get extras
@@ -86,9 +80,14 @@ public class CarActivity extends AppCompatActivity {
 
         // setup data
         SQLiteHelper db = new SQLiteHelper(getApplicationContext());
+
         car = db.getCar(bundle_car_id);
+
         drawPageSelectionIndicators(0);
         dotsCount = car.urls().size();    //No of tabs or images
+
+
+
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -222,11 +221,5 @@ public class CarActivity extends AppCompatActivity {
         }
     }
 
-//    @Override
-//    public void onClick(View v) {
-//        SQLiteHelper sqLiteHelper = new SQLiteHelper(getApplicationContext());
-//        if (v == addFeedback) {
-//            sqLiteHelper.insertFeedback();
-//        }
-//    }
+
 }

@@ -153,7 +153,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
      * @param feedback      the comment
      * @throws SQLiteException
      */
-    public void insertFeedback(final int carId, final int userId, final String userAvatarUrl, final String feedback) throws SQLiteException {
+    public void insertFeedback(final int carId, final String userId, final String userAvatarUrl, final String feedback) throws SQLiteException {
         SQLiteDatabase db = this.getWritableDatabase();
         try {
             String sql = "INSERT INTO " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_CAR_ID + ", " + DBConstants.KEY_USER_NAME + ", " + DBConstants.KEY_USER_AVATAR_URL + ", " + DBConstants.KEY_USER_FEEDBACK + ") VALUES (" + carId + ", " + userId + ", " + userAvatarUrl + ", " + feedback + ")";
