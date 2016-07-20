@@ -30,7 +30,6 @@ import java.util.List;
 
 public class CarActivityFeedbackFragment extends Fragment {
 
-    private int bundle_id;
     private EditText editTextName;
     private EditText editTextFeedback;
     private Button addFeedback;
@@ -45,7 +44,7 @@ public class CarActivityFeedbackFragment extends Fragment {
         initBundleVariables(getActivity().getIntent().getExtras());
 
         final SQLiteHelper db = new SQLiteHelper(getActivity().getApplicationContext());
-        List<FeedbackItem> feedbackItems = db.getCarFeedback(bundle_id);
+        List<FeedbackItem> feedbackItems = db.getCarFeedback(bundle_car_id);
 
         editTextName = (EditText) view.findViewById(R.id.name_text);
         editTextFeedback = (EditText) view.findViewById(R.id.feedback_text);
@@ -61,19 +60,18 @@ public class CarActivityFeedbackFragment extends Fragment {
         addFeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                db.insertFeedback(bundle_car_id, editTextName.getText().toString(), "http:gbhjh", editTextFeedback.getText().toString());
+                db.insertFeedback(bundle_car_id, editTextName.getText().toString(), "http://goo.gl/lCxNi4", editTextFeedback.getText().toString());
             }});
 
             return view;
         }
 
 
-            private void initBundleVariables(Bundle bundle) {
+    private void initBundleVariables(Bundle bundle) {
         if (bundle != null) {
-            bundle_id = bundle.getInt(DBConstants.BUNDLE_CAR_ID);
-
+            bundle_car_id = bundle.getInt(DBConstants.BUNDLE_CAR_ID);
         } else {
-            bundle_id = -1;
+            bundle_car_id = -1;
         }
     }
 }

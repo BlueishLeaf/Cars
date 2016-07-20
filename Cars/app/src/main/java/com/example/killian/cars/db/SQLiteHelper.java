@@ -131,7 +131,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         List<FeedbackItem> feedbackItems = new ArrayList<>();
 
-        Cursor cursor = db.rawQuery("SELECT * FROM " + DBConstants.DATABASE_TABLE_FEEDBACK + " WHERE car_id = " + carId, null);
+        Cursor cursor = db.rawQuery("SELECT * FROM " + DBConstants.DATABASE_TABLE_FEEDBACK + " WHERE car_id = " + carId + " ORDER BY id DESC", null);
 
         FeedbackItem feedback;
         if (cursor.moveToFirst()) {
@@ -156,8 +156,9 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public void insertFeedback(final int carId, final String userId, final String userAvatarUrl, final String feedback) throws SQLiteException {
         SQLiteDatabase db = this.getWritableDatabase();
         try {
-            String sql = "INSERT INTO " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_CAR_ID + ", " + DBConstants.KEY_USER_NAME + ", " + DBConstants.KEY_USER_AVATAR_URL + ", " + DBConstants.KEY_USER_FEEDBACK + ") VALUES (" + carId + ", " + userId + ", " + userAvatarUrl + ", " + feedback + ")";
+            String sql = "INSERT INTO " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_CAR_ID + ", " + DBConstants.KEY_USER_NAME + ", " + DBConstants.KEY_USER_AVATAR_URL + ", " + DBConstants.KEY_USER_FEEDBACK + ") VALUES (" + carId + ", '" + userId + "', '" + userAvatarUrl + "', '" + feedback + "')";
             db.execSQL(sql);
+            Log.i("", "feedback added to db");
         } catch (Exception e) {
             Log.i(e.toString(), "Could not insert into db");
         }
