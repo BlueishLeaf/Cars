@@ -17,7 +17,7 @@ public class InitiateCars {
     /**
      * Seed Car table
      *
-     * @param db
+     * @param db db instance
      */
     public static void initCars(SQLiteDatabase db) {
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CARS + "(" + DBConstants.KEY_ID + ","
@@ -120,7 +120,7 @@ public class InitiateCars {
     /**
      * Seed CarImage table
      *
-     * @param db
+     * @param db db instance
      */
     public static void initCarImages(SQLiteDatabase db) {
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_CAR_IMAGES + "(" + DBConstants.KEY_ID + ","
@@ -247,7 +247,7 @@ public class InitiateCars {
     /**
      * Seed CarFeedBack table
      *
-     * @param db
+     * @param db db instance
      */
     public static void initCarFeedback(SQLiteDatabase db) {
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","

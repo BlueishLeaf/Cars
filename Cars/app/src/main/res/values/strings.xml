@@ -13,4 +13,7 @@
     <string name="recent_feedback">Recent Feedback</string>
     <string name="description">description</string>
     <string name="car_price">price</string>
+    <string name="leave_feedback">Leave Feedback</string>
+    <string name="feedback">Feedback</string>
+    <string name="name">Name</string>
 </resources>

@@ -4,15 +4,15 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 
 /**
- * This class (@code TabLayoutListener) listens for a touch command from user
+ * This class (@code CarFragmentsTabLayoutListener) listens for a touch command from user
  *
  * @author Killian.
  * @since 12/07/2016.
  */
-public class TabLayoutListener implements TabLayout.OnTabSelectedListener {
+public class CarFragmentsTabLayoutListener implements TabLayout.OnTabSelectedListener {
     private ViewPager viewPager;
 
-    public TabLayoutListener(ViewPager viewPager) {
+    public CarFragmentsTabLayoutListener(ViewPager viewPager) {
         this.viewPager = viewPager;
     }
 

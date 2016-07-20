@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.killian.cars.activities.CarActivity;
-import com.example.killian.cars.constants.DBConstants;
+import com.example.killian.cars.constants.ActivityConstants;
 import com.example.killian.cars.models.CarItem;
 import com.example.killian.cars.R;
 import com.squareup.picasso.Picasso;
@@ -41,8 +41,8 @@ public class CarItemActivityAdapter extends RecyclerView.Adapter<CarItemActivity
                 public void onClick(View view) {
                     Intent intent = new Intent(itemView.getContext(), CarActivity.class);
                     Bundle bundle = new Bundle();
-                    bundle.putInt(DBConstants.BUNDLE_CAR_ID, itemView.getId());
-                    bundle.putString("car_url", itemView.getTag(R.id.image_url_tag).toString());
+                    bundle.putInt(ActivityConstants.BUNDLE_CAR_ID, itemView.getId());
+                    bundle.putString(ActivityConstants.BUNDLE_CAR_URL, itemView.getTag(R.id.image_url_tag).toString());
                     intent.putExtras(bundle);
                     itemView.getContext().startActivity(intent);
                 }
@@ -57,7 +57,7 @@ public class CarItemActivityAdapter extends RecyclerView.Adapter<CarItemActivity
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.caritemrow, parent, false);
+                .inflate(R.layout.car_row_item, parent, false);
         return new MyViewHolder(itemView);
 
     }

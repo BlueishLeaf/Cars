@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.killian.cars.constants.DBConstants;
+import com.example.killian.cars.constants.ActivityConstants;
 import com.example.killian.cars.models.Car;
 import com.example.killian.cars.R;
 import com.example.killian.cars.utils.AnimationUtils;
@@ -28,7 +28,6 @@ public class CarActivityInfoFragment extends Fragment {
     private TextView price;
     private TextView description;
     private int bundle_id;
-    //private int secondaryColor;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -63,7 +62,7 @@ public class CarActivityInfoFragment extends Fragment {
 
     private void initBundleVariables(Bundle bundle) {
         if (bundle != null) {
-            bundle_id = bundle.getInt(DBConstants.BUNDLE_CAR_ID);
+            bundle_id = bundle.getInt(ActivityConstants.BUNDLE_CAR_ID);
         } else {
             bundle_id = -1;
         }

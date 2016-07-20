@@ -36,10 +36,6 @@ public class CarActivityFeedbackAdapter extends RecyclerView.Adapter<CarActivity
         }
     }
 
-    public CarActivityFeedbackAdapter(List<FeedbackItem> feedbackItems) {
-        this.feedbackItems = feedbackItems;
-    }
-
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
@@ -57,9 +53,16 @@ public class CarActivityFeedbackAdapter extends RecyclerView.Adapter<CarActivity
         Picasso.with(holder.itemView.getContext()).load(feedbackItem.getAvatarUrl()).fit().into(holder.avatarImage);
     }
 
-
     @Override
     public int getItemCount() {
         return feedbackItems.size();
+    }
+
+    public CarActivityFeedbackAdapter(List<FeedbackItem> feedbackItems) {
+        this.feedbackItems = feedbackItems;
+    }
+
+    public void setFeedbackItems(final List<FeedbackItem> feedbackItems) {
+        this.feedbackItems = feedbackItems;
     }
 }
