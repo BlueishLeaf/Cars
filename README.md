@@ -12,5 +12,7 @@ A catalog of cars
 * ~~Car page~~
 * ~~Populate feedback database~~
 * Page loading spinner
-* Splash screen
-* Shared element activity transition
+* ~~Splash screen~~
+* ButterKnife
+* Animations
+* Feedback display time of post
