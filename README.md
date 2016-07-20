@@ -15,4 +15,4 @@ A catalog of cars
 * ~~Splash screen~~
 * ButterKnife
 * Animations
-* Feedback display time of post
+* ~~Feedback display time of post~~
