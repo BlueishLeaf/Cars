@@ -45,7 +45,6 @@ public class SplashActivity extends Activity {
 
     private void setAnimations() {
         splashImage.setAnimation(AnimationUtils.fadeIn(this, 1000, 0));
-
     }
 }
 

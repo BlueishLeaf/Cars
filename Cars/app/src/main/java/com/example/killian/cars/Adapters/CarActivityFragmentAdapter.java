@@ -38,5 +38,4 @@ public class CarActivityFragmentAdapter extends FragmentStatePagerAdapter {
     public int getCount() {
         return numOfTabs;
     }
-
 }

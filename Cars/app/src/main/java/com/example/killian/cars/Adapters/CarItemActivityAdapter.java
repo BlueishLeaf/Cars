@@ -59,7 +59,6 @@ public class CarItemActivityAdapter extends RecyclerView.Adapter<CarItemActivity
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.car_row_item, parent, false);
         return new MyViewHolder(itemView);
-
     }
 
     @Override

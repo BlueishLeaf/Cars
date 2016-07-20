@@ -2,7 +2,6 @@ package com.example.killian.cars.constants;
 
 /**
  * Activity Constants
- *
  * Created by ronanclancy on 20/07/2016.
  */
 public class ActivityConstants {
