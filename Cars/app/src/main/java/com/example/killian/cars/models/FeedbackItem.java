@@ -11,12 +11,14 @@ public class FeedbackItem {
     private String username;
     private String avatarUrl;
     private String feedback;
+    private String date;
 
-    public FeedbackItem(final int id, final String username, final String avatarUrl, final String feedback) {
+    public FeedbackItem(final int id, final String username, final String avatarUrl, final String feedback, final String date) {
         this.id = id;
         this.username = username;
         this.avatarUrl = avatarUrl;
         this.feedback = feedback;
+        this.date = date;
     }
 
     public int getId() {
@@ -33,6 +35,9 @@ public class FeedbackItem {
 
     public String getFeedback() {
         return feedback;
+    }
 
+    public String getDate(){
+        return date;
     }
 }

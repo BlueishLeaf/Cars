@@ -29,10 +29,20 @@
         android:id="@+id/user_feedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/feedbackkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
+        android:text="@string/feedback"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:maxLines="5"
         android:lines="5"
         android:layout_below="@+id/user_avatar"
         android:layout_toEndOf="@+id/user_avatar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date"
+        android:id="@+id/user_date"
+        android:layout_alignBottom="@+id/user_name"
+        android:layout_toEndOf="@+id/user_name"
+        android:layout_marginLeft="20dp" />
 </RelativeLayout>

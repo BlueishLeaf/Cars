@@ -27,12 +27,15 @@ public class CarActivityFeedbackAdapter extends RecyclerView.Adapter<CarActivity
         public TextView username;
         public ImageView avatarImage;
         public TextView feedback;
+        public TextView date;
 
         public MyViewHolder(final View itemView) {
             super(itemView);
             username = (TextView) itemView.findViewById(R.id.user_name);
             avatarImage = (ImageView) itemView.findViewById(R.id.user_avatar);
             feedback = (TextView) itemView.findViewById(R.id.user_feedback);
+            date = (TextView) itemView.findViewById(R.id.user_date);
+
         }
     }
 
@@ -49,6 +52,7 @@ public class CarActivityFeedbackAdapter extends RecyclerView.Adapter<CarActivity
         FeedbackItem feedbackItem = feedbackItems.get(position);
         holder.username.setText(feedbackItem.getUsername());
         holder.feedback.setText(feedbackItem.getFeedback());
+        holder.date.setText(feedbackItem.getDate());
         holder.itemView.setId(feedbackItem.getId());
         Picasso.with(holder.itemView.getContext()).load(feedbackItem.getAvatarUrl()).fit().into(holder.avatarImage);
     }

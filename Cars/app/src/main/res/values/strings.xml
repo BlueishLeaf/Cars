@@ -16,4 +16,5 @@
     <string name="leave_feedback">Leave Feedback</string>
     <string name="feedback">Feedback</string>
     <string name="name">Name</string>
+    <string name="date">Date</string>
 </resources>

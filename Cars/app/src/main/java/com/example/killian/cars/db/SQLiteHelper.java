@@ -40,7 +40,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         db.execSQL(createCarImageTable);
         InitiateCars.initCarImages(db);
 
-        String createCarCommentsTable = "CREATE TABLE " + DBConstants.DATABASE_TABLE_FEEDBACK + "(id INTEGER PRIMARY KEY AUTOINCREMENT, car_id INTEGER, user_name TEXT, user_avatar_url TEXT, user_feedback TEXT, post_date DATE)";
+        String createCarCommentsTable = "CREATE TABLE " + DBConstants.DATABASE_TABLE_FEEDBACK + "(id INTEGER PRIMARY KEY AUTOINCREMENT, car_id INTEGER, user_name TEXT, user_avatar_url TEXT, user_feedback TEXT, date DATE)";
         db.execSQL(createCarCommentsTable);
         InitiateCars.initCarFeedback(db);
     }
@@ -135,7 +135,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         FeedbackItem feedback;
         if (cursor.moveToFirst()) {
             do {
-                feedback = new FeedbackItem(cursor.getInt(0), cursor.getString(2), cursor.getString(3), cursor.getString(4));
+                feedback = new FeedbackItem(cursor.getInt(0), cursor.getString(2), cursor.getString(3), cursor.getString(4), cursor.getString(5));
                 feedbackItems.add(feedback);
             } while (cursor.moveToNext());
         }

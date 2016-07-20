@@ -256,14 +256,15 @@ public class InitiateCars {
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
                 + DBConstants.KEY_USER_FEEDBACK + ", "
                 + DBConstants.KEY_DATE +") "
-                + "values(1, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
+                + "values(1, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.', '12-07-1997')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
                 + DBConstants.KEY_CAR_ID + ","
                 + DBConstants.KEY_USER_AVATAR_URL + ", "
-                + DBConstants.KEY_USER_FEEDBACK + ") "
-                + "values(2, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.')");
+                + DBConstants.KEY_USER_FEEDBACK + ", "
+                + DBConstants.KEY_DATE +") "
+                + "values(2, 'SatanRocksMySocks', 1, 'https://goo.gl/4C5eeA', 'Praesent sollicitudin arcu sed dolor dignissim pretium. Fusce suscipit, sapien laoreet ornare convallis, ligula libero bibendum ex, cursus fermentum metus justo ut nisl.', '15-09-1998')");
 
         db.execSQL("insert into " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_ID + ","
                 + DBConstants.KEY_USER_NAME + ","
