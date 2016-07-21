@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:background="#466c6c6c">
+            android:background="#4d4d4d">
 
             <LinearLayout
                 android:id="@+id/viewPagerCountDots"
@@ -45,7 +45,7 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:background="#466c6c6c" />
+                android:background="#666666" />
         </RelativeLayout>
     </android.support.design.widget.AppBarLayout>
 

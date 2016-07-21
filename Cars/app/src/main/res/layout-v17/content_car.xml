@@ -16,7 +16,7 @@
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#466c6c6c" />
+            android:background="#989898" />
 
         <android.support.v4.view.ViewPager
             android:id="@+id/carTabPager"
