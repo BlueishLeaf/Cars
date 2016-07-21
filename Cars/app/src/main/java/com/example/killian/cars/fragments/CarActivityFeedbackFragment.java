@@ -18,6 +18,9 @@ import com.example.killian.cars.db.SQLiteHelper;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * This class (@code CarActivityFeedbackFragment) governs the framework of the feedback tab
  * for a specific car
@@ -27,8 +30,12 @@ import java.util.List;
  */
 public class CarActivityFeedbackFragment extends Fragment {
 
-    private EditText editTextName;
-    private EditText editTextFeedback;
+    @BindView(R.id.name_text)
+    EditText editTextName;
+
+    @BindView(R.id.feedback_text)
+    EditText editTextFeedback;
+
     private int bundle_car_id;
     private List<FeedbackItem> feedbackItems;
     private SQLiteHelper db;
@@ -38,11 +45,9 @@ public class CarActivityFeedbackFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_car_feedback, container, false);
         initBundleVariables(getActivity().getIntent().getExtras());
+        ButterKnife.bind(this, view);
 
         fetchFeedbackItemsFromDb();
-
-        editTextName = (EditText) view.findViewById(R.id.name_text);
-        editTextFeedback = (EditText) view.findViewById(R.id.feedback_text);
 
         final RecyclerView mRecyclerView = (RecyclerView) view.findViewById(R.id.feedback_recycler_view);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
@@ -71,7 +76,7 @@ public class CarActivityFeedbackFragment extends Fragment {
         }
     }
 
-    private void fetchFeedbackItemsFromDb(){
+    private void fetchFeedbackItemsFromDb() {
         db = new SQLiteHelper(getActivity().getApplicationContext());
         feedbackItems = db.getCarFeedback(bundle_car_id);
     }
