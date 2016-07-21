@@ -13,8 +13,7 @@ A catalog of cars
 * ~~Populate feedback database~~
 * ~~Feedback display time of post~~
 * ~~Splash screen~~
-* Circular color yoke
 * Page loading spinner
-* ButterKnife
+* ~~ButterKnife~~
 * Animations
 
