@@ -11,8 +11,10 @@ A catalog of cars
 * ~~Car service~~
 * ~~Car page~~
 * ~~Populate feedback database~~
-* Page loading spinner
+* ~~Feedback display time of post~~
 * ~~Splash screen~~
+* Circular color yoke
+* Page loading spinner
 * ButterKnife
 * Animations
-* ~~Feedback display time of post~~
+
