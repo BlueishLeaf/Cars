@@ -1,5 +1,7 @@
 package com.example.killian.cars.models;
 
+import butterknife.BindString;
+
 /**
  * Feedback item class models a comment displayed on the feedback section of a selected car
  * <p/>
@@ -37,7 +39,7 @@ public class FeedbackItem {
         return feedback;
     }
 
-    public String getDate(){
+    public String getDate() {
         return date;
     }
 }

@@ -34,7 +34,7 @@ public class CarActivityInfoFragment extends Fragment {
 
     @BindView(R.id.carPrice)
     TextView price;
-    
+
     @BindView(R.id.carDescription)
     TextView description;
 
