@@ -1,6 +1,7 @@
 package com.example.killian.cars.fragments;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 
 import com.example.killian.cars.adapters.CarActivityFeedbackAdapter;
 import com.example.killian.cars.constants.ActivityConstants;
@@ -21,6 +23,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Optional;
 
 /**
  * This class (@code CarActivityFeedbackFragment) governs the framework of the feedback tab
@@ -68,7 +71,6 @@ public class CarActivityFeedbackFragment extends Fragment {
         });
         return view;
     }
-
 
 
     private void initBundleVariables(Bundle bundle) {
