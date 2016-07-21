@@ -10,6 +10,9 @@ import com.example.killian.cars.R;
 import com.example.killian.cars.constants.ActivityConstants;
 import com.example.killian.cars.utils.AnimationUtils;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * The class {@code SplashActivity} is used to display a splash screen
  * <p/>
@@ -17,7 +20,7 @@ import com.example.killian.cars.utils.AnimationUtils;
  */
 public class SplashActivity extends Activity {
 
-    public ImageView splashImage;
+    @BindView(R.id.splash_image)ImageView splashImage;
 
     /**
      * Called when the activity is first created.
@@ -26,8 +29,7 @@ public class SplashActivity extends Activity {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.splash);
-        splashImage = (ImageView) findViewById(R.id.splash_image);
-
+        ButterKnife.bind(this);
         setAnimations();
 
         /* New Handler to start the Menu-Activity

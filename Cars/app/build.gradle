@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
 
 android {
     compileSdkVersion 23
@@ -30,5 +32,5 @@ dependencies {
     compile 'org.michaelevans.colorart:library:0.0.3'
     compile 'com.jakewharton:butterknife:8.2.1'
     compile 'de.hdodenhof:circleimageview:2.1.0'
-
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
 }

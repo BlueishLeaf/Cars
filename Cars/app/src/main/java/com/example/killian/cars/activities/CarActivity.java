@@ -31,6 +31,9 @@ import com.example.killian.cars.utils.UIUtils;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * The class {@code CarActivity} governs the framework of a specific car's page
  *
@@ -40,28 +43,30 @@ import com.squareup.picasso.Target;
 public class CarActivity extends AppCompatActivity {
 
     //Variable definitions
-    private ViewPager viewPager;
-    private TabLayout tabLayout;
-    private ViewPager tabViewPager;
-    private CollapsingToolbarLayout collapsingToolbarLayout;
-
-
     private int bundle_car_id;
     private int detailColor;
 
     private Car car;
     private String bundle_car_ulr;
 
+    //Bind Variables
+    @BindView(R.id.carImagePager)
+    ViewPager viewPager;
+
+    @BindView(R.id.tab_layout)
+    TabLayout tabLayout;
+
+    @BindView(R.id.carTabPager)
+    ViewPager tabViewPager;
+
+    @BindView(R.id.collapsing_toolbar)
+    CollapsingToolbarLayout collapsingToolbarLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_car);
-
-        // bind variables
-        viewPager = (ViewPager) findViewById(R.id.carImagePager);
-        tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabViewPager = (ViewPager) findViewById(R.id.carTabPager);
-        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        ButterKnife.bind(this);
 
         // get extras
         initBundleVariables(getIntent().getExtras());
