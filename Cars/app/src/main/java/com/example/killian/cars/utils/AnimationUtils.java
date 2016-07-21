@@ -58,4 +58,20 @@ public class AnimationUtils {
         fade_in.setStartOffset(offset);
         return fade_in;
     }
+
+    /**
+     * Returns a slide right to left animation
+     *
+     * @param context  context
+     * @param duration mls duration of animation
+     * @param offset   mls delay animation starting, set to 0 for no offset
+     * @return Animation animation with a duration and offset
+     */
+    public static Animation slideRightToLeft(Context context, int duration, int offset) {
+        Animation slide_right_to_left = android.view.animation.AnimationUtils.loadAnimation(context,
+                R.anim.slide_right_to_left);
+        slide_right_to_left.setDuration(duration);
+        slide_right_to_left.setStartOffset(offset);
+        return slide_right_to_left;
+    }
 }

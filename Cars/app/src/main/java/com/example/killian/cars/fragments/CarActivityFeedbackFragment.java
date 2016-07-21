@@ -15,6 +15,7 @@ import com.example.killian.cars.constants.ActivityConstants;
 import com.example.killian.cars.models.FeedbackItem;
 import com.example.killian.cars.R;
 import com.example.killian.cars.db.SQLiteHelper;
+import com.example.killian.cars.utils.AnimationUtils;
 
 import java.util.List;
 
@@ -67,6 +68,8 @@ public class CarActivityFeedbackFragment extends Fragment {
         });
         return view;
     }
+
+
 
     private void initBundleVariables(Bundle bundle) {
         if (bundle != null) {
