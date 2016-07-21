@@ -9,18 +9,18 @@ import android.view.View;
 /**
  * Created by Killian on 21/07/2016.
  */
-public class MyRecyclerView extends RecyclerView {
+public class CarItemRecyclerView extends RecyclerView {
     private boolean mScrollable;
 
-    public MyRecyclerView(Context context) {
+    public CarItemRecyclerView(Context context) {
         this(context, null);
     }
 
-    public MyRecyclerView(Context context, AttributeSet attrs) {
+    public CarItemRecyclerView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public MyRecyclerView(Context context, AttributeSet attrs, int defStyle) {
+    public CarItemRecyclerView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         mScrollable = false;
     }

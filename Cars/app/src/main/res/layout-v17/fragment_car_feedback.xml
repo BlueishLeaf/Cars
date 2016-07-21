@@ -22,7 +22,7 @@
         android:layout_below="@+id/textView"
         android:background="@android:color/darker_gray" />
 
-    <android.support.v7.widget.RecyclerView
+    <com.example.killian.cars.utils.FeedbackItemRecyclerView
         android:id="@+id/feedback_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
