@@ -13,6 +13,9 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * The class (@code CarActivityFeedbackAdapter) binds data from the database to the feedback section
  *
@@ -24,17 +27,21 @@ public class CarActivityFeedbackAdapter extends RecyclerView.Adapter<CarActivity
     private List<FeedbackItem> feedbackItems;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView username;
-        public ImageView avatarImage;
-        public TextView feedback;
-        public TextView date;
+        @BindView(R.id.user_name)
+        TextView username;
+
+        @BindView(R.id.user_avatar)
+        ImageView avatarImage;
+
+        @BindView(R.id.user_feedback)
+        TextView feedback;
+
+        @BindView(R.id.user_date)
+        TextView date;
 
         public MyViewHolder(final View itemView) {
             super(itemView);
-            username = (TextView) itemView.findViewById(R.id.user_name);
-            avatarImage = (ImageView) itemView.findViewById(R.id.user_avatar);
-            feedback = (TextView) itemView.findViewById(R.id.user_feedback);
-            date = (TextView) itemView.findViewById(R.id.user_date);
+            ButterKnife.bind(this, itemView);
 
         }
     }

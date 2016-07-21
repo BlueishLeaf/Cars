@@ -20,7 +20,8 @@ import butterknife.ButterKnife;
  */
 public class SplashActivity extends Activity {
 
-    @BindView(R.id.splash_image)ImageView splashImage;
+    @BindView(R.id.splash_image)
+    ImageView splashImage;
 
     /**
      * Called when the activity is first created.
@@ -30,6 +31,7 @@ public class SplashActivity extends Activity {
         super.onCreate(icicle);
         setContentView(R.layout.splash);
         ButterKnife.bind(this);
+
         setAnimations();
 
         /* New Handler to start the Menu-Activity
