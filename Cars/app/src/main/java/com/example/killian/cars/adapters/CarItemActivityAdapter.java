@@ -17,6 +17,9 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * The class (@code CarItemActivityAdapter) binds data from the database to the car item list
  *
@@ -29,13 +32,17 @@ public class CarItemActivityAdapter extends RecyclerView.Adapter<CarItemActivity
     private List<CarItem> carItemList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView carTitleTextView;
-        public ImageView carImageView;
+
+        @BindView(R.id.car_item_title)
+        TextView carTitleTextView;
+
+        @BindView(R.id.car_item_image)
+        ImageView carImageView;
 
         public MyViewHolder(final View itemView) {
             super(itemView);
-            carTitleTextView = (TextView) itemView.findViewById(R.id.car_item_title);
-            carImageView = (ImageView) itemView.findViewById(R.id.car_item_image);
+            ButterKnife.bind(this, itemView);
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
