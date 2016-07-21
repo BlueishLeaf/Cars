@@ -13,6 +13,7 @@ import com.example.killian.cars.activities.CarActivity;
 import com.example.killian.cars.constants.ActivityConstants;
 import com.example.killian.cars.models.CarItem;
 import com.example.killian.cars.R;
+import com.example.killian.cars.utils.MyRecyclerView;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -27,7 +28,7 @@ import butterknife.ButterKnife;
  * @since 06/07/2016.
  */
 
-public class CarItemActivityAdapter extends RecyclerView.Adapter<CarItemActivityAdapter.MyViewHolder> {
+public class CarItemActivityAdapter extends MyRecyclerView.Adapter<CarItemActivityAdapter.MyViewHolder> {
 
     private List<CarItem> carItemList;
 
