@@ -14,6 +14,9 @@ import com.example.killian.cars.R;
 import com.example.killian.cars.utils.AnimationUtils;
 import com.example.killian.cars.db.SQLiteHelper;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * This class (@code CarActivityInfoFragment) governs the framework for the information about
  * a specific car to be displayed on its info tab
@@ -23,10 +26,18 @@ import com.example.killian.cars.db.SQLiteHelper;
  */
 public class CarActivityInfoFragment extends Fragment {
 
-    private TextView model;
-    private ImageView color;
-    private TextView price;
-    private TextView description;
+    @BindView(R.id.carModel)
+    TextView model;
+
+    @BindView(R.id.carColor)
+    ImageView color;
+
+    @BindView(R.id.carPrice)
+    TextView price;
+    
+    @BindView(R.id.carDescription)
+    TextView description;
+
     private int bundle_id;
 
     @Override
@@ -34,11 +45,7 @@ public class CarActivityInfoFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_car_info, container, false);
         initBundleVariables(getActivity().getIntent().getExtras());
-
-        model = (TextView) view.findViewById(R.id.carModel);
-        color = (ImageView) view.findViewById(R.id.carColor);
-        price = (TextView) view.findViewById(R.id.carPrice);
-        description = (TextView) view.findViewById(R.id.carDescription);
+        ButterKnife.bind(this, view);
 
         SQLiteHelper db = new SQLiteHelper(getActivity().getApplicationContext());
         Car car = db.getCar(bundle_id);
