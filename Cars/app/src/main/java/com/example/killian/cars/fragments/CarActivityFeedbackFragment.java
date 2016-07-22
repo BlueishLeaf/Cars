@@ -84,13 +84,12 @@ public class CarActivityFeedbackFragment extends Fragment {
         editTextName.getText().clear();
         editTextFeedback.getText().clear();
         if(commentBox.getVisibility() == View.GONE){
-            commentBox.setAnimation(AnimationUtils.fadeOut(this.getContext(), 500, 0));
-            commentBox.setVisibility(View.INVISIBLE);
+            commentBox.setAnimation(AnimationUtils.slideLeftToRight(this.getContext(), 500, 0));
             commentBox.setVisibility(View.GONE);
 
         }
         else {
-            commentBox.setAnimation(AnimationUtils.slideUp(this.getContext(), 500, 0));
+            commentBox.setAnimation(AnimationUtils.slideRightToLeft(this.getContext(), 500, 0));
         }
     }
 
