@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
@@ -82,6 +83,15 @@ public class CarActivityFeedbackFragment extends Fragment {
         commentBox.setVisibility(commentBox.getVisibility() == View.GONE ? View.VISIBLE: View.GONE);
         editTextName.getText().clear();
         editTextFeedback.getText().clear();
+        if(commentBox.getVisibility() == View.GONE){
+            commentBox.setAnimation(AnimationUtils.fadeOut(this.getContext(), 500, 0));
+            commentBox.setVisibility(View.INVISIBLE);
+            commentBox.setVisibility(View.GONE);
+
+        }
+        else {
+            commentBox.setAnimation(AnimationUtils.slideUp(this.getContext(), 500, 0));
+        }
     }
 
     private void initBundleVariables(Bundle bundle) {

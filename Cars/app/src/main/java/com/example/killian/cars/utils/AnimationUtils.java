@@ -74,4 +74,20 @@ public class AnimationUtils {
         slide_right_to_left.setStartOffset(offset);
         return slide_right_to_left;
     }
+
+    /**
+     * Returns a simple fade out animation
+     *
+     * @param context  context
+     * @param duration mls duration of animation
+     * @param offset   mls delay animation starting, set to 0 for no offset
+     * @return Animation animation with a duration and offset
+     */
+    public static Animation fadeOut(Context context, int duration, int offset) {
+        Animation fade_out = android.view.animation.AnimationUtils.loadAnimation(context,
+                R.anim.fade_out);
+        fade_out.setDuration(duration);
+        fade_out.setStartOffset(offset);
+        return fade_out;
+    }
 }
