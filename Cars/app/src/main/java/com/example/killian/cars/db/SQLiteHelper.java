@@ -16,6 +16,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * The class (@code SQLiteHelper) sets up our SQLite database
@@ -155,7 +156,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public void insertFeedback(final int carId, final String userId, final String userAvatarUrl, final String feedback) throws SQLiteException {
         SQLiteDatabase db = this.getWritableDatabase();
         try {
-            String sql = "INSERT INTO " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_CAR_ID + ", " + DBConstants.KEY_USER_NAME + ", " + DBConstants.KEY_USER_AVATAR_URL + ", " + DBConstants.KEY_USER_FEEDBACK + ", " + DBConstants.KEY_DATE + ") VALUES (" + carId + ", '" + userId + "', '" + userAvatarUrl + "', '" + feedback + "', '"+ new SimpleDateFormat("dd-MM-yyyy").format(new Date()).toString()+ "')";
+            String sql = "INSERT INTO " + DBConstants.DATABASE_TABLE_FEEDBACK + "(" + DBConstants.KEY_CAR_ID + ", " + DBConstants.KEY_USER_NAME + ", " + DBConstants.KEY_USER_AVATAR_URL + ", " + DBConstants.KEY_USER_FEEDBACK + ", " + DBConstants.KEY_DATE + ") VALUES (" + carId + ", '" + userId + "', '" + userAvatarUrl + "', '" + feedback + "', '"+ new SimpleDateFormat("dd-MM-yyyy", Locale.UK).format(new Date()).toString()+ "')";
             db.execSQL(sql);
             Log.i("", "feedback added to db");
         } catch (Exception e) {

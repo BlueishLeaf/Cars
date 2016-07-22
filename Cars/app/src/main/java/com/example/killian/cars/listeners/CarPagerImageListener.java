@@ -8,9 +8,11 @@ import android.widget.LinearLayout;
 import com.example.killian.cars.R;
 
 /**
- * CarPagerImageListener
- * <p/>
- * Created by ronanclancy on 20/07/2016.
+ * The class (@code CarPagerImageListener) allows the pager indicator dots to be
+ * drawn by determining what image is in view
+ *
+ * @author Ronan.
+ * @since 20/07/2016.
  */
 public class CarPagerImageListener implements ViewPager.OnPageChangeListener {
 

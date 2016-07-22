@@ -29,7 +29,8 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_alignBottom="@+id/carModel"
-        android:layout_toEndOf="@+id/carModel" />
+        android:layout_toEndOf="@+id/carModel"
+        android:contentDescription="@string/gets_color_from_database" />
 
     <TextView
         android:id="@+id/carDescription"

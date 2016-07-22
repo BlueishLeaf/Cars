@@ -1,9 +1,10 @@
 package com.example.killian.cars.constants;
 
 /**
- * Activity Constants
+ * The class (@code Activity Constants) contains all constants used besides the database constants
  *
- * Created by ronanclancy on 20/07/2016.
+ * @author Killian.
+ * @since 11/07/2016.
  */
 public class ActivityConstants {
 

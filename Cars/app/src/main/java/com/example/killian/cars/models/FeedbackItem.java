@@ -1,11 +1,12 @@
 package com.example.killian.cars.models;
 
-import butterknife.BindString;
 
 /**
- * Feedback item class models a comment displayed on the feedback section of a selected car
- * <p/>
- * Created by Killian on 14/07/2016.
+ * The class (@code FeedbackItem) models a comment displayed on the feedback
+ * section of a selected car
+ *
+ * @author Killian.
+ * @since 14/07/2016.
  */
 public class FeedbackItem {
 

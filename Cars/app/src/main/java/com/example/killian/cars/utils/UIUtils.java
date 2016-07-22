@@ -5,6 +5,9 @@ import android.graphics.Bitmap;
 import org.michaelevans.colorart.library.ColorArt;
 
 /**
+ * The class (@code UIUtils) contains the configurations for picasso that
+ * are used in this project
+ *
  * @author Killian.
  * @since 12/07/2016.
  */

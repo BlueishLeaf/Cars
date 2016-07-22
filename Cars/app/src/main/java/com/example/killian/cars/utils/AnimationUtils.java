@@ -6,6 +6,9 @@ import android.view.animation.Animation;
 import com.example.killian.cars.R;
 
 /**
+ * The class (@code AnimationUtils) contains frameworks for the animations
+ * used in this project
+ *
  * @author Killian.
  * @since 12/07/2016.
  */

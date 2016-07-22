@@ -1,7 +1,8 @@
 package com.example.killian.cars.constants;
 
 /**
- * The class (@code DBConstants) shows all the constants used in this project
+ * The class (@code DBConstants) shows all the constants used in
+ * this project for the  SQLight database
  *
  * @author Killian.
  * @since 11/07/2016.

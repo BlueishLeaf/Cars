@@ -15,8 +15,9 @@ import butterknife.ButterKnife;
 
 /**
  * The class {@code SplashActivity} is used to display a splash screen
- * <p/>
- * Created by Killian on 18/07/2016.
+ *
+ * @author Killian.
+ * @since 11/07/2016.
  */
 public class SplashActivity extends Activity {
 

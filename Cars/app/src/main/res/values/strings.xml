@@ -20,4 +20,5 @@
     <string name="submit_feedback">Submit feedback</string>
     <string name="submit">Submit</string>
     <string name="cancel">Cancel</string>
+    <string name="gets_color_from_database">Gets color from database</string>
 </resources>
