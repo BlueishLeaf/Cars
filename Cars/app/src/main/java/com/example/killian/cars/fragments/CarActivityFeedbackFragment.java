@@ -1,5 +1,6 @@
 package com.example.killian.cars.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.example.killian.cars.adapters.CarActivityFeedbackAdapter;
 import com.example.killian.cars.constants.ActivityConstants;
@@ -71,24 +73,33 @@ public class CarActivityFeedbackFragment extends Fragment {
 
     @OnClick(R.id.feedback_button)
     public void submitOnClick() {
-        db.insertFeedback(bundle_car_id, editTextName.getText().toString(), "http://goo.gl/lCxNi4", editTextFeedback.getText().toString());
-        fetchFeedbackItemsFromDb();
-        mAdapter.setFeedbackItems(feedbackItems);
-        mAdapter.notifyDataSetChanged();
-        inflateFeedbackOnClick();
+        if (editTextName.getText().toString().length() == 0 || editTextFeedback.getText().toString().length() == 0) {
+            Context context = getContext();
+            CharSequence text = "Don't Leave Any Field Blank!";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+        } else {
+            db.insertFeedback(bundle_car_id, editTextName.getText().toString(), "http://goo.gl/lCxNi4", editTextFeedback.getText().toString());
+            fetchFeedbackItemsFromDb();
+            mAdapter.setFeedbackItems(feedbackItems);
+            mAdapter.notifyDataSetChanged();
+            inflateFeedbackOnClick();
+        }
+
     }
 
     @OnClick({R.id.feedback_inflate_button, R.id.cancel_button})
     public void inflateFeedbackOnClick() {
-        commentBox.setVisibility(commentBox.getVisibility() == View.GONE ? View.VISIBLE: View.GONE);
+        commentBox.setVisibility(commentBox.getVisibility() == View.GONE ? View.VISIBLE : View.GONE);
         editTextName.getText().clear();
         editTextFeedback.getText().clear();
-        if(commentBox.getVisibility() == View.GONE){
+        if (commentBox.getVisibility() == View.GONE) {
             commentBox.setAnimation(AnimationUtils.slideLeftToRight(this.getContext(), 500, 0));
             commentBox.setVisibility(View.GONE);
 
-        }
-        else {
+        } else {
             commentBox.setAnimation(AnimationUtils.slideRightToLeft(this.getContext(), 500, 0));
         }
     }
