@@ -41,7 +41,8 @@ A catalog of cars
 ### Priority 5:
 * If possible, see about setting up a basic user base
 
-### __Completed Tasks__
+### __Completed Tasks:__
+
 * ~~Car model and Car catalog model~~
 * ~~Adapter~~
 * ~~Database~~
