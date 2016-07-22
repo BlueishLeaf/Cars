@@ -23,6 +23,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.Optional;
 
 /**
@@ -40,9 +41,14 @@ public class CarActivityFeedbackFragment extends Fragment {
     @BindView(R.id.feedback_text)
     EditText editTextFeedback;
 
+    @BindView(R.id.comment_box)
+    RelativeLayout commentBox;
+
     private int bundle_car_id;
     private List<FeedbackItem> feedbackItems;
     private SQLiteHelper db;
+
+    private CarActivityFeedbackAdapter mAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -55,23 +61,28 @@ public class CarActivityFeedbackFragment extends Fragment {
 
         final RecyclerView mRecyclerView = (RecyclerView) view.findViewById(R.id.feedback_recycler_view);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
+        mAdapter = new CarActivityFeedbackAdapter(feedbackItems);
         mRecyclerView.setLayoutManager(mLayoutManager);
-        final CarActivityFeedbackAdapter mAdapter = new CarActivityFeedbackAdapter(feedbackItems);
         mRecyclerView.setAdapter(mAdapter);
 
-        Button addFeedback = (Button) view.findViewById(R.id.feedback_button);
-        addFeedback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                db.insertFeedback(bundle_car_id, editTextName.getText().toString(), "http://goo.gl/lCxNi4", editTextFeedback.getText().toString());
-                fetchFeedbackItemsFromDb();
-                mAdapter.setFeedbackItems(feedbackItems);
-                mAdapter.notifyDataSetChanged();
-            }
-        });
         return view;
     }
 
+    @OnClick(R.id.feedback_button)
+    public void submitOnClick() {
+        db.insertFeedback(bundle_car_id, editTextName.getText().toString(), "http://goo.gl/lCxNi4", editTextFeedback.getText().toString());
+        fetchFeedbackItemsFromDb();
+        mAdapter.setFeedbackItems(feedbackItems);
+        mAdapter.notifyDataSetChanged();
+        inflateFeedbackOnClick();
+    }
+
+    @OnClick({R.id.feedback_inflate_button, R.id.cancel_button})
+    public void inflateFeedbackOnClick() {
+        commentBox.setVisibility(commentBox.getVisibility() == View.GONE ? View.VISIBLE: View.GONE);
+        editTextName.getText().clear();
+        editTextFeedback.getText().clear();
+    }
 
     private void initBundleVariables(Bundle bundle) {
         if (bundle != null) {

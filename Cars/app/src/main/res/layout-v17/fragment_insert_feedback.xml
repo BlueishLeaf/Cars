@@ -2,6 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/comment_box"
+    android:visibility="gone"
     android:orientation="vertical">
 
     <EditText
@@ -10,25 +12,38 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/name_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:ems="10"
-        android:inputType="textMultiLine"
-        android:text="@string/feedback" />
+        android:hint="@string/feedback"
+        android:inputType="textMultiLine" />
 
     <EditText
         android:id="@+id/name_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/name" />
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/feedback_button"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Submit Feedback"
+        android:layout_alignEnd="@+id/feedback_text"
         android:layout_below="@+id/feedback_text"
-        android:layout_alignParentStart="true" />
+        android:text="@string/submit" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/feedback_text"
+        android:layout_below="@+id/feedback_text"
+        android:text="@string/cancel" />
 
 </RelativeLayout>

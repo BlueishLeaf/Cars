@@ -39,6 +39,8 @@ public class FeedbackItemRecyclerView extends RecyclerView {
         }
     }
 
+
+
     private void animate(View view, final int pos) {
         view.animate().cancel();
         view.setAlpha(0);
