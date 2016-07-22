@@ -13,7 +13,6 @@ import com.example.killian.cars.activities.CarActivity;
 import com.example.killian.cars.constants.ActivityConstants;
 import com.example.killian.cars.models.CarItem;
 import com.example.killian.cars.R;
-import com.example.killian.cars.utils.CarItemRecyclerView;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -28,9 +27,11 @@ import butterknife.ButterKnife;
  * @since 06/07/2016.
  */
 
-public class CarItemActivityAdapter extends CarItemRecyclerView.Adapter<CarItemActivityAdapter.MyViewHolder> {
+public class CarItemActivityAdapter extends RecyclerView.Adapter<CarItemActivityAdapter.MyViewHolder> {
 
     private List<CarItem> carItemList;
+
+    private int lastAnimatedPosition;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -69,6 +70,21 @@ public class CarItemActivityAdapter extends CarItemRecyclerView.Adapter<CarItemA
         return new MyViewHolder(itemView);
 
     }
+    private void animate(View view, final int pos) {
+        if(lastAnimatedPosition < pos) {
+            view.animate().cancel();
+            view.setTranslationY(100);
+            view.setAlpha(0);
+            view.animate().alpha(1.0f).translationY(0).setDuration(300).setStartDelay(pos * 100);
+        }
+        else {
+            view.animate().cancel();
+            view.setTranslationY(-100);
+            view.setAlpha(0);
+            view.animate().alpha(1.0f).translationY(0).setDuration(300).setStartDelay(pos * 100);
+        }
+        lastAnimatedPosition=pos;
+    }
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
@@ -77,6 +93,7 @@ public class CarItemActivityAdapter extends CarItemRecyclerView.Adapter<CarItemA
         holder.itemView.setId(carItem.getId());
         holder.itemView.setTag(R.id.image_url_tag, carItem.getUrl());
         Picasso.with(holder.itemView.getContext()).load(carItem.getUrl()).fit().into(holder.carImageView);
+        animate(holder.itemView, position);
     }
 
     @Override

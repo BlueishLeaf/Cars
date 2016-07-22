@@ -24,7 +24,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/name"
         android:inputType="textPersonName" />

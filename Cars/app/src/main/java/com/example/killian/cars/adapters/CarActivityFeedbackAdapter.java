@@ -9,8 +9,6 @@ import android.widget.TextView;
 
 import com.example.killian.cars.models.FeedbackItem;
 import com.example.killian.cars.R;
-import com.example.killian.cars.utils.CarItemRecyclerView;
-import com.example.killian.cars.utils.FeedbackItemRecyclerView;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -24,7 +22,7 @@ import butterknife.ButterKnife;
  * @author Killian.
  * @since 14/07/2016.
  */
-public class CarActivityFeedbackAdapter extends FeedbackItemRecyclerView.Adapter<CarActivityFeedbackAdapter.MyViewHolder> {
+public class CarActivityFeedbackAdapter extends RecyclerView.Adapter<CarActivityFeedbackAdapter.MyViewHolder> {
 
     private List<FeedbackItem> feedbackItems;
 
@@ -55,6 +53,12 @@ public class CarActivityFeedbackAdapter extends FeedbackItemRecyclerView.Adapter
         return new MyViewHolder(itemView);
 
     }
+    private void animate(View view, final int pos) {
+        view.animate().cancel();
+        view.setTranslationY(100);
+        view.setAlpha(0);
+        view.animate().alpha(1.0f).translationY(0).setDuration(300).setStartDelay(pos * 100);
+    }
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
@@ -64,6 +68,7 @@ public class CarActivityFeedbackAdapter extends FeedbackItemRecyclerView.Adapter
         holder.date.setText(feedbackItem.getDate());
         holder.itemView.setId(feedbackItem.getId());
         Picasso.with(holder.itemView.getContext()).load(feedbackItem.getAvatarUrl()).fit().into(holder.avatarImage);
+        animate(holder.itemView, position);
     }
 
 
