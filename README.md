@@ -9,7 +9,6 @@ A catalog of cars
 * Improve general readability of code via inspection tool
 * Use ButterKnife to bind listeners
 * Fix scrolling problem in feedback
-* Add a check to make sure neither field in the feedback form is empty when it is submitted
 
 ### Priority 2:
 * Try to fit higher resolution images into car items
@@ -55,4 +54,5 @@ A catalog of cars
 * ~~ButterKnife~~
 * ~~Animations~~
 * ~~Improve feedback box animation as it hides by making it wait before being marked as "GONE"~~
+* ~~Add a check to make sure neither field in the feedback form is empty when it is submitted~~
 
